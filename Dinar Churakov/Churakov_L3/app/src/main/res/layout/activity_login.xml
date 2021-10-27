@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/back">
+
+    <ImageView
+        android:id="@+id/yellow_design_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_eclipse_left"
+        tools:ignore="MissingConstraints,ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/yellow_design_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_eclipse_top"
+        tools:ignore="MissingConstraints,ImageContrastCheck" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sign_in_button"
+        style="@style/button"
+        android:layout_width="309dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/sign_in"
+        app:cornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/forgot_pass_text"
+        app:layout_constraintStart_toStartOf="@+id/forgot_pass_text"
+        app:layout_constraintTop_toBottomOf="@+id/forgot_pass_text" >
+
+    </com.google.android.material.button.MaterialButton>
+
+
+    <TextView
+        android:id="@+id/loginAct_welcome_text"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="216dp"
+        android:text="@string/welcome_back"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email_login_editText"
+        android:layout_width="309dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="432dp"
+        android:background="@drawable/circle"
+        android:ems="10"
+        android:hint="@string/enter_your_email"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:autofillHints="emailAddress" />
+
+    <EditText
+        android:id="@+id/password_login_editText"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/circle"
+        android:ems="10"
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/email_login_editText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email_login_editText"
+        app:layout_constraintTop_toBottomOf="@+id/email_login_editText"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:autofillHints="password" />
+
+    <TextView
+        android:id="@+id/forgot_pass_text"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="@string/forgot_password"
+        android:textColor="@color/text_yellow"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/password_login_editText"
+        app:layout_constraintStart_toStartOf="@+id/password_login_editText"
+        app:layout_constraintTop_toBottomOf="@+id/password_login_editText"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/dont_acc_text"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/don_t_have_account"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/sign_in_button"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/sign_in_button"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_button" />
+
+    <TextView
+        android:id="@+id/sign_up_textButton"
+        style="@style/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/text_yellow"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/dont_acc_text"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/dont_acc_text"
+        app:layout_constraintTop_toBottomOf="@+id/dont_acc_text"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/loginAct_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="276dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_login"
+        android:contentDescription="@string/todo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
