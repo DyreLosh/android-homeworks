@@ -12,29 +12,20 @@ class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityRegisterBinding.inflate(layoutInflater)
-        val confirmPassword = binding.confirmPasswordEditText
         setContentView(binding.root)
-
         val email = binding.emailEditText
         val password = binding.passwordEditText
-        val userName = binding.fullNameEditText
+        val validate = Validate()
 
         binding.registerButton.setOnClickListener {
-
-            if (!(userName.length() >= 4)) {
-                userName.error = getString(R.string.userName_valid)
-            } else if (!(email.length() >= 6)) {
-                email.error = getString(R.string.email_error8)
-            } else if (!(email.text.toString().contains(getString(R.string.dog)))) {
-                email.error = getString(R.string.email_error_dog)
-            } else if (!(password.length() >= 7)) {
-                password.error = getString(R.string.email_error8)
-            } else if (confirmPassword.text.toString() != password.text.toString()) {
-                confirmPassword.error = getString(R.string.dont_confirm)
-            } else {
-                val intent = Intent(this, ProfileActivity::class.java)
-                startActivity(intent)
-                Toast.makeText(this, getString(R.string.reg_complete), Toast.LENGTH_LONG).show()
+            when(validate.validateLogin(email,password)){
+                1 -> email.error = getString(R.string.error_email_more8)
+                2 -> email.error = getString(R.string.error_email_true)
+                3 -> password.error = getString(R.string.error_email_more8)
+                else -> {
+                    val intent = Intent(this, ProfileActivity::class.java)
+                    startActivity(intent)
+                }
             }
         }
 

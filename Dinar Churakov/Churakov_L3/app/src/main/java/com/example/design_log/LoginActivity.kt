@@ -3,16 +3,18 @@ package com.example.design_log
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import com.example.design_log.databinding.ActivityLoginBinding
 
+
 class LoginActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val binding = ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         val email = binding.emailLoginEditText
         val password = binding.passwordLoginEditText
-        setContentView(binding.root)
+        val validate = Validate()
 
         binding.signUpTextButton.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
@@ -20,16 +22,15 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.signInButton.setOnClickListener {
-            if (!(email.length() >= 6)) {
-                email.error = getString(R.string.email_error8)
-            } else if (!(email.text.toString().contains(getString(R.string.dog)))) {
-                email.error = getString(R.string.email_error_dog)
-            } else if (!(password.length() >= 7)) {
-                password.error = getString(R.string.email_error8)
-            } else {
-                val intent = Intent(this, ProfileActivity::class.java)
-                startActivity(intent)
-                Toast.makeText(this, getString(R.string.coplete_login), Toast.LENGTH_LONG).show()
+
+            when(validate.validateLogin(email,password)){
+                1 -> email.error = getString(R.string.error_email_more8)
+                2 -> email.error = getString(R.string.error_email_true)
+                3 -> password.error = getString(R.string.error_email_more8)
+                else -> {
+                    val intent = Intent(this, ProfileActivity::class.java)
+                    startActivity(intent)
+                }
             }
         }
     }

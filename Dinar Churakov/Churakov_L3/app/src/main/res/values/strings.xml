@@ -2,19 +2,19 @@
     <string name="app_name">Design</string>
     <string name="get_started">Get Started</string>
     <string name="lorem_text">Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Tellus praesent purus<br /><br />
+        adipiscing elit. Tellus praesent purus<br />
         tincidunt ut cursus vitae. Nisl, vitae nulla<br />
         lectus tortor, est a aliquam. Pretium netus </string>
     <string name="sign_in">Sign In</string>
     <string name="register">Register</string>
-    <string name="confirm_password">Confirm password</string>
-    <string name="enter_password">Enter password</string>
-    <string name="enter_your_email">Enter your email</string>
-    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="confirm_password_hint">Confirm password</string>
+    <string name="password_hint">Enter password</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="name_hint">Enter your full name</string>
     <string name="we_help_you_meet_up_you_tasks_on_time">We help you meet up you tasks on time</string>
     <string name="welcome_onboard">Welcome Onboard!</string>
     <string name="welcome_back">Welcome Back!</string>
-    <string name="forgot_password">Forgot password</string>
+    <string name="forgot_password_button">Forgot password</string>
     <string name="don_t_have_account">Don\'t have an account?</string>
     <string name="sign_up">Sign Up</string>
     <string name="let_s_get_things_done_on_time">Let’s get things done on time</string>
@@ -29,12 +29,13 @@
     <string name="daily_tasks">Daily Tasks</string>
     <string name="tasks_list">Tasks List</string>
     <string name="already_have_an_account">Already have an account?</string>
-    <string name="email_error8">Введите больше 8 знаков</string>
-    <string name="email_error_dog">Введите правильную почту</string>
+    <string name="error_email_more8">Введите больше 8 знаков</string>
+    <string name="error_email_true">Введите правильную почту</string>
     <string name="coplete_login">Вход выполнен</string>
-    <string name="dog">\@</string>
+    <string name="at">\@</string>
     <string name="reg_complete">Регистрация завершена</string>
-    <string name="dont_confirm">Пароли не совпадают</string>
-    <string name="userName_valid">Введи больше 4 символов</string>
+    <string name="error_confirm">Пароли не совпадают</string>
+    <string name="error_username_more4">Введи больше 4 символов</string>
+
 
 </resources>

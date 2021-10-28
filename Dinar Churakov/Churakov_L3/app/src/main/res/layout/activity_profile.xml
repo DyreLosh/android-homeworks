@@ -5,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfileActivity"
-    android:background="@color/backgr">
+    android:background="@color/back">
 
     <FrameLayout
         android:id="@+id/frameLayout"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="255dp"
         android:background="@color/yellow_button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +35,7 @@
             android:id="@+id/image_button_log_out"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
+            android:layout_gravity="end"
             android:layout_marginTop="48dp"
             android:layout_marginEnd="16dp"
             android:contentDescription="@string/todo"
@@ -50,7 +50,6 @@
             android:layout_marginTop="84dp"
             android:contentDescription="@string/todo"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
             app:srcCompat="@drawable/drug" />
 
         <TextView
@@ -61,41 +60,25 @@
             android:layout_marginTop="90dp"
             android:fontFamily="@font/poppins"
             android:text="@string/textview"
-            android:textColor="#000000"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/ava_image"
-            app:layout_constraintHorizontal_bias="0.619"
             app:layout_constraintStart_toStartOf="@+id/ava_image"
             app:layout_constraintTop_toBottomOf="@+id/ava_image" />
 
     </FrameLayout>
 
-    <TextView
-        android:id="@+id/tasksList_text"
-        style="@style/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="-1dp"
-        android:layout_marginTop="184dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="@string/tasks_list"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.183"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
-
     <FrameLayout
         android:id="@+id/linearLayout"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="45dp"
         android:layout_height="250dp"
         android:layout_marginBottom="48dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
@@ -120,37 +103,35 @@
                 <CheckBox
                     android:id="@+id/checkBox9"
                     android:layout_width="match_parent"
-                    android:layout_height="38dp"
+                    android:layout_height="wrap_content"
                     android:buttonTint="@color/yellow_button"
-                    android:text="@string/learn_javascript_by_11am"
-                    />
+                    android:text="@string/learn_javascript_by_11am" />
 
                 <CheckBox
                     android:id="@+id/checkBox8"
                     android:layout_width="match_parent"
-                    android:layout_height="38dp"
+                    android:layout_height="wrap_content"
                     android:text="@string/edit_youtube_video_by_1pm"
-                    android:buttonTint="@color/yellow_button"
-                    />
+                    android:buttonTint="@color/yellow_button" />
 
                 <CheckBox
                     android:id="@+id/checkBox7"
                     android:layout_width="match_parent"
-                    android:layout_height="38dp"
+                    android:layout_height="wrap_content"
                     android:text="@string/have_lunch_by_2pm"
                     android:buttonTint="@color/yellow_button"/>
 
                 <CheckBox
                     android:id="@+id/checkBox6"
                     android:layout_width="match_parent"
-                    android:layout_height="38dp"
+                    android:layout_height="wrap_content"
                     android:text="@string/visit_parents_at_4pm"
                     android:buttonTint="@color/yellow_button"/>
 
                 <CheckBox
                     android:id="@+id/checkBox5"
                     android:layout_width="match_parent"
-                    android:layout_height="38dp"
+                    android:layout_height="wrap_content"
                     android:buttonTint="@color/yellow_button"
                     android:text="@string/research_on_ui_designs"
                     tools:ignore="DuplicateSpeakableTextCheck" />
@@ -158,14 +139,14 @@
                 <CheckBox
                     android:id="@+id/checkBox4"
                     android:layout_width="match_parent"
-                    android:layout_height="38dp"
+                    android:layout_height="wrap_content"
                     android:text="@string/research_on_ui_designs"
                     android:buttonTint="@color/yellow_button"/>
 
                 <CheckBox
                     android:id="@+id/checkBox3"
                     android:layout_width="match_parent"
-                    android:layout_height="38dp"
+                    android:layout_height="wrap_content"
                     android:text="@string/checkbox"
                     android:buttonTint="@color/yellow_button"/>
             </LinearLayout>
@@ -177,7 +158,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppins"
             android:text="@string/daily_tasks"
-            android:textColor="#000000"
+            android:textColor="@color/black"
             android:textSize="14sp"
             android:textStyle="bold" />
 

@@ -12,8 +12,7 @@ class ProfileActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.imageButtonLogOut.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
+            finish()
         }
     }
 }
