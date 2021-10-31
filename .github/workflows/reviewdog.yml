@@ -13,8 +13,8 @@ jobs:
       - name: ktlint
         uses: ScaCap/action-ktlint@master
         with:
-          github_token: ${{ secrets.github_token }}
-          reporter: github-pr-review
+          reporter: github-pr-check
           android: true
           fail_on_error: true
           filter_mode: nofilter
+          github_token: ${{ secrets.GITHUB_TOKEN }}
