@@ -9,7 +9,7 @@ import com.example.design_log.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-       val binding = ActivityMainBinding.inflate(layoutInflater)
+        val binding = ActivityMainBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
