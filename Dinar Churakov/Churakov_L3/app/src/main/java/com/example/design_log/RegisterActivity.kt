@@ -25,9 +25,9 @@ class RegisterActivity : AppCompatActivity() {
             password.error = validate.validatePassword(password)
             confirmPassword.error = validate.confirmPassword(password, confirmPassword)
 
-            if (validate.validateName(username) == null && validate.validateEmail(email) == null
-                && validate.validatePassword(password) == null
-                && validate.confirmPassword(password, confirmPassword) == null) {
+            if (validate.validateName(username) == null && validate.validateEmail(email) == null &&
+                validate.validatePassword(password) == null &&
+                validate.confirmPassword(password, confirmPassword) == null ) {
 
                 val intent = Intent(this, ProfileActivity::class.java)
                 startActivity(intent)
@@ -40,7 +40,3 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 }
-
-
-
-

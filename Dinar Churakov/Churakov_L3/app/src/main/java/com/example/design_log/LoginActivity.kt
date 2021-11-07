@@ -25,7 +25,8 @@ class LoginActivity : AppCompatActivity() {
             email.error = validate.validateEmail(email)
             password.error = validate.validatePassword(password)
 
-            if (validate.validateEmail(email) == null && validate.validatePassword(password) == null) {
+            if (validate.validateEmail(email) == null &&
+                validate.validatePassword(password) == null) {
                 val intent = Intent(this, ProfileActivity::class.java)
                 startActivity(intent)
             }

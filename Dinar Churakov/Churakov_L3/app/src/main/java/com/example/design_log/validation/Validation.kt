@@ -7,7 +7,7 @@ import com.example.design_log.R
 class Validation(private val context: Context) {
 
     fun validateName(name: EditText): String? =
-        if(name.length() <= 4) context.getString(R.string.error_username_more4)
+        if (name.length() <= 4) context.getString(R.string.error_username_more4)
         else null
 
     fun validateEmail(email: EditText): String? =
@@ -17,14 +17,15 @@ class Validation(private val context: Context) {
             else -> null
         }
 
-    fun validatePassword(password: EditText) : String? =
-        if(password.length() <= 8) context.getString(R.string.error_email_more8)
+    fun validatePassword(password: EditText): String? =
+        if (password.length() <= 8) context.getString(R.string.error_email_more8)
         else null
 
     fun confirmPassword(password: EditText, confirmPassword: EditText): String? =
-        if(password.text.toString() != confirmPassword.text.toString()) context.getString(R.string.error_confirm)
+        if (password.text.toString() != confirmPassword.text.toString()) context.getString(R.string.error_confirm)
         else null
-    }
+}
+
 
 
 
