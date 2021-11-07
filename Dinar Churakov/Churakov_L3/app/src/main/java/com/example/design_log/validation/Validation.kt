@@ -11,6 +11,7 @@ class Validation(private val context: Context) {
         else null
 
     fun validateEmail(email: EditText): String? =
+
          when {
             email.length() <= 8 -> context.getString(R.string.error_email_more8)
             !(email.text.toString().contains("@")) -> context.getString(R.string.error_email_true)

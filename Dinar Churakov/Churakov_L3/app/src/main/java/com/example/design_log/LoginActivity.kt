@@ -17,19 +17,20 @@ class LoginActivity : AppCompatActivity() {
         val validate = Validation(this)
 
         binding.signUpTextButton.setOnClickListener {
+
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
 
         binding.signInButton.setOnClickListener {
+
             email.error = validate.validateEmail(email)
             password.error = validate.validatePassword(password)
 
             if (validate.validateEmail(email) == null &&
-                validate.validatePassword(password) == null)
-                {
-                val intent = Intent(this, ProfileActivity::class.java)
-                startActivity(intent)
+                validate.validatePassword(password) == null) {
+                    val intent = Intent(this, ProfileActivity::class.java)
+                    startActivity(intent)
             }
         }
     }
