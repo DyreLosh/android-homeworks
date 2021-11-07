@@ -14,7 +14,8 @@
         android:contentDescription="@string/todo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_eclipse_left" />
+        app:srcCompat="@drawable/ic_eclipse_left"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -23,7 +24,8 @@
         android:contentDescription="@string/todo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_eclipse_top" />
+        app:srcCompat="@drawable/ic_eclipse_top"
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/regAct_welcome_text"
@@ -51,119 +53,152 @@
         app:layout_constraintStart_toStartOf="@+id/regAct_welcome_text"
         app:layout_constraintTop_toBottomOf="@+id/regAct_welcome_text" />
 
-    <EditText
-        android:id="@+id/full_name_editText"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingTop="13dp"
-        android:paddingBottom="13dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginTop="44dp"
-        android:background="@drawable/circle"
-        android:ems="10"
+        app:boxBackgroundColor="@color/white"
+        android:layout_marginTop="20dp"
         android:hint="@string/name_hint"
-        android:inputType="textPersonName"
-        android:textColorHint="@color/black"
+        app:hintTextColor="@color/black"
+        app:boxStrokeWidth="0dp"
+        app:startIconDrawable="@drawable/ic_user"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginStart="@dimen/margin_sides_editText"
+        android:layout_marginEnd="@dimen/margin_sides_editText"
+        app:boxCornerRadiusBottomEnd="@dimen/box_corner_radius"
+        app:boxCornerRadiusTopEnd="@dimen/box_corner_radius"
+        app:boxCornerRadiusBottomStart="@dimen/box_corner_radius"
+        app:boxCornerRadiusTopStart="@dimen/box_corner_radius"
         app:layout_constraintEnd_toEndOf="@+id/regAct_weHelp_text"
         app:layout_constraintStart_toStartOf="@+id/regAct_weHelp_text"
-        app:layout_constraintTop_toBottomOf="@+id/regAct_weHelp_text"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:autofillHints="username" />
+        app:layout_constraintTop_toBottomOf="@+id/regAct_weHelp_text">
 
-    <EditText
-        android:id="@+id/email_editText"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:layout_marginTop="16dp"
-        android:paddingTop="13dp"
-        android:paddingBottom="13dp"
-        android:background="@drawable/circle"
-        android:ems="10"
+        app:boxBackgroundColor="@color/white"
+        android:layout_marginTop="10dp"
+        app:boxStrokeWidth="0dp"
+        app:startIconDrawable="@drawable/ic_email"
         android:hint="@string/email_hint"
-        android:inputType="textPersonName|textEmailAddress"
-        android:textColorHint="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/full_name_editText"
-        app:layout_constraintStart_toStartOf="@+id/full_name_editText"
-        app:layout_constraintTop_toBottomOf="@+id/full_name_editText"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:autofillHints="emailAddress" />
+        app:hintTextColor="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginStart="@dimen/margin_sides_editText"
+        android:layout_marginEnd="@dimen/margin_sides_editText"
+        app:boxCornerRadiusBottomEnd="@dimen/box_corner_radius"
+        app:boxCornerRadiusTopEnd="@dimen/box_corner_radius"
+        app:boxCornerRadiusBottomStart="@dimen/box_corner_radius"
+        app:boxCornerRadiusTopStart="@dimen/box_corner_radius"
+        app:layout_constraintEnd_toEndOf="@+id/inputLayoutName"
+        app:layout_constraintStart_toStartOf="@+id/inputLayoutName"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutName">
 
-    <EditText
-        android:id="@+id/password_editText"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:paddingTop="13dp"
-        android:paddingBottom="13dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/circle"
-        android:ems="10"
         android:hint="@string/password_hint"
-        android:inputType="textPassword"
-        android:textColorHint="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/email_editText"
-        app:layout_constraintStart_toStartOf="@+id/email_editText"
-        app:layout_constraintTop_toBottomOf="@+id/email_editText"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:autofillHints="password" />
+        app:hintTextColor="@color/black"
+        app:boxBackgroundColor="@color/white"
+        app:boxStrokeWidth="0dp"
+        android:layout_marginTop="10dp"
+        app:startIconDrawable="@drawable/ic_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginStart="@dimen/margin_sides_editText"
+        android:layout_marginEnd="@dimen/margin_sides_editText"
+        app:boxCornerRadiusBottomEnd="@dimen/box_corner_radius"
+        app:boxCornerRadiusTopEnd="@dimen/box_corner_radius"
+        app:boxCornerRadiusBottomStart="@dimen/box_corner_radius"
+        app:boxCornerRadiusTopStart="@dimen/box_corner_radius"
+        app:layout_constraintEnd_toEndOf="@+id/inputLayoutEmail"
+        app:layout_constraintStart_toStartOf="@+id/inputLayoutEmail"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutEmail">
 
-    <EditText
-        android:id="@+id/confirm_password_editText"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textVisiblePassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutConfirmPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        android:paddingTop="13dp"
-        android:paddingBottom="13dp"
-        android:background="@drawable/circle"
-        android:ems="10"
+        app:boxBackgroundColor="@color/white"
+        android:layout_marginTop="10dp"
+        app:boxStrokeWidth="0dp"
+        app:startIconDrawable="@drawable/ic_confirm"
         android:hint="@string/confirm_password_hint"
-        android:inputType="textPassword"
-        android:textColorHint="@color/black"
-        app:layout_constraintEnd_toEndOf="@+id/password_editText"
-        app:layout_constraintStart_toStartOf="@+id/password_editText"
-        app:layout_constraintTop_toBottomOf="@+id/password_editText"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:autofillHints="password" />
+        app:hintTextColor="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_marginStart="@dimen/margin_sides_editText"
+        android:layout_marginEnd="@dimen/margin_sides_editText"
+        app:boxCornerRadiusBottomEnd="@dimen/box_corner_radius"
+        app:boxCornerRadiusTopEnd="@dimen/box_corner_radius"
+        app:boxCornerRadiusBottomStart="@dimen/box_corner_radius"
+        app:boxCornerRadiusTopStart="@dimen/box_corner_radius"
+        app:layout_constraintEnd_toEndOf="@+id/inputLayoutPassword"
+        app:layout_constraintStart_toStartOf="@+id/inputLayoutPassword"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutPassword">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/register_button"
+        android:id="@+id/registerButton"
         style="@style/button"
         android:layout_width="match_parent"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
         android:layout_height="wrap_content"
         android:paddingVertical="10dp"
         android:text="@string/register"
         app:cornerRadius="15dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="@+id/confirm_password_editText"
-        app:layout_constraintStart_toStartOf="@+id/confirm_password_editText"
-        app:layout_constraintTop_toBottomOf="@+id/confirm_password_editText" />
+        app:layout_constraintEnd_toEndOf="@+id/inputLayoutConfirmPassword"
+        app:layout_constraintStart_toStartOf="@+id/inputLayoutConfirmPassword"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutConfirmPassword" />
 
     <TextView
-        android:id="@+id/haveAcc_text"
+        android:id="@+id/haveAccText"
         style="@style/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/already_have_an_account"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/register_button"
-        app:layout_constraintStart_toStartOf="@+id/register_button"
-        app:layout_constraintTop_toBottomOf="@+id/register_button" />
+        app:layout_constraintEnd_toEndOf="@+id/registerButton"
+        app:layout_constraintStart_toStartOf="@+id/registerButton"
+        app:layout_constraintTop_toBottomOf="@+id/registerButton" />
 
     <TextView
-        android:id="@+id/sign_in_textButton"
+        android:id="@+id/signInTextButton"
         style="@style/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -172,7 +207,8 @@
         android:textColor="@color/text_yellow"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/haveAcc_text"
-        app:layout_constraintStart_toStartOf="@+id/haveAcc_text"
-        app:layout_constraintTop_toTopOf="@+id/haveAcc_text" />
+        app:layout_constraintEnd_toEndOf="@+id/haveAccText"
+        app:layout_constraintStart_toStartOf="@+id/haveAccText"
+        app:layout_constraintTop_toTopOf="@+id/haveAccText" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

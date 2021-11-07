@@ -1,8 +1,8 @@
 package com.example.design_log
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.design_log.databinding.ActivityRegisterBinding
 import com.example.design_log.validation.Validation
 
@@ -13,23 +13,24 @@ class RegisterActivity : AppCompatActivity() {
         val binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val email = binding.emailEditText
-        val password = binding.passwordEditText
-        val username = binding.fullNameEditText
-        val confirmPassword = binding.confirmPasswordEditText
-        val validate = Validation()
+        val email = binding.editTextEmail
+        val password = binding.editTextPassword
+        val username = binding.editTextName
+        val confirmPassword = binding.editTextConfirmPassword
+        val validate = Validation(this)
 
         binding.registerButton.setOnClickListener {
-            when (validate.validateRegister(username, email, password, confirmPassword)) {
-                0 -> username.error = getString(R.string.error_username_more4)
-                1 -> email.error = getString(R.string.error_email_more8)
-                2 -> email.error = getString(R.string.error_email_true)
-                3 -> password.error = getString(R.string.error_email_more8)
-                4 -> confirmPassword.error = getString(R.string.error_confirm)
-                else -> {
-                    val intent = Intent(this, ProfileActivity::class.java)
-                    startActivity(intent)
-                }
+            username.error = validate.validateName(username)
+            email.error = validate.validateEmail(email)
+            password.error = validate.validatePassword(password)
+            confirmPassword.error = validate.confirmPassword(password, confirmPassword)
+
+            if (validate.validateName(username) == null && validate.validateEmail(email) == null
+                && validate.validatePassword(password) == null
+                && validate.confirmPassword(password, confirmPassword) == null) {
+
+                val intent = Intent(this, ProfileActivity::class.java)
+                startActivity(intent)
             }
         }
 
@@ -39,6 +40,7 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 }
+
 
 
 

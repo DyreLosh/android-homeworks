@@ -1,8 +1,8 @@
 package com.example.design_log
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.design_log.databinding.ActivityLoginBinding
 import com.example.design_log.validation.Validation
 
@@ -12,9 +12,9 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val email = binding.emailLoginEditText
-        val password = binding.passwordLoginEditText
-        val validate = Validation()
+        val email = binding.editTextEmailLogin
+        val password = binding.editTextPasswordLogin
+        val validate = Validation(this)
 
         binding.signUpTextButton.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
@@ -22,15 +22,12 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.signInButton.setOnClickListener {
+            email.error = validate.validateEmail(email)
+            password.error = validate.validatePassword(password)
 
-            when (validate.validateLogin(email, password)) {
-                1 -> email.error = getString(R.string.error_email_more8)
-                2 -> email.error = getString(R.string.error_email_true)
-                3 -> password.error = getString(R.string.error_email_more8)
-                else -> {
-                    val intent = Intent(this, ProfileActivity::class.java)
-                    startActivity(intent)
-                }
+            if (validate.validateEmail(email) == null && validate.validatePassword(password) == null) {
+                val intent = Intent(this, ProfileActivity::class.java)
+                startActivity(intent)
             }
         }
     }

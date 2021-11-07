@@ -31,7 +31,7 @@
     <string name="already_have_an_account">Already have an account?</string>
     <string name="error_email_more8">Введите больше 8 знаков</string>
     <string name="error_email_true">Введите правильную почту</string>
-    <string name="coplete_login">Вход выполнен</string>
+    <string name="complete_login">Вход выполнен</string>
     <string name="at">\@</string>
     <string name="reg_complete">Регистрация завершена</string>
     <string name="error_confirm">Пароли не совпадают</string>
