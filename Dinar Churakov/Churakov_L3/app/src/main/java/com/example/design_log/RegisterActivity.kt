@@ -27,8 +27,7 @@ class RegisterActivity : AppCompatActivity() {
 
             if (validate.validateName(username) == null && validate.validateEmail(email) == null &&
                 validate.validatePassword(password) == null &&
-                validate.confirmPassword(password, confirmPassword) == null)
-                {
+                validate.confirmPassword(password, confirmPassword) == null) {
 
                 val intent = Intent(this, ProfileActivity::class.java)
                 startActivity(intent)
