@@ -26,11 +26,11 @@ class LoginActivity : AppCompatActivity() {
             password.error = validate.validatePassword(password)
 
             if (validate.validateEmail(email) == null &&
-                validate.validatePassword(password) == null) {
+                validate.validatePassword(password) == null)
+                {
                 val intent = Intent(this, ProfileActivity::class.java)
                 startActivity(intent)
             }
         }
     }
 }
-

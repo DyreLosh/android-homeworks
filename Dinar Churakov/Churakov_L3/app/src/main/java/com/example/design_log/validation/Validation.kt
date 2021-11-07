@@ -22,13 +22,7 @@ class Validation(private val context: Context) {
         else null
 
     fun confirmPassword(password: EditText, confirmPassword: EditText): String? =
-        if (password.text.toString() != confirmPassword.text.toString()) context.getString(R.string.error_confirm)
+        if (password.text.toString() != confirmPassword.text.toString())
+            context.getString(R.string.error_confirm)
         else null
 }
-
-
-
-
-
-
-
