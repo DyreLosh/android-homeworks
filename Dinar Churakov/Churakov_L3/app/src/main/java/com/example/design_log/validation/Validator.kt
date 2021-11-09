@@ -26,7 +26,7 @@ class Validator(private val context: Context) {
             password.text.toString().isBlank() -> context.getString(R.string.error_empty)
             password.length() <= 8 -> context.getString(R.string.error_email_more8)
             else -> null
-    }
+        }
 
     fun confirmPassword(password: EditText, confirmPassword: EditText): String? =
         when {
