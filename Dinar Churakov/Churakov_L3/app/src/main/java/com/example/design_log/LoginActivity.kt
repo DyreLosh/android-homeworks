@@ -12,7 +12,6 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        
         val email = binding.editTextEmailLogin
         val password = binding.editTextPasswordLogin
         val emailInputLayout = binding.inputLayoutEmailLogin

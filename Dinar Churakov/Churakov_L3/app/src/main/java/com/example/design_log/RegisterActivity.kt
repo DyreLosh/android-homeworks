@@ -23,8 +23,10 @@ class RegisterActivity : AppCompatActivity() {
             usernameInputLayout.error = validate.validateName(binding.editTextName)
             emailInputLayout.error = validate.validateEmail(binding.editTextEmail)
             passwordInputLayout.error = validate.validatePassword(binding.editTextPassword)
-            confirmPasswordInputLayout.error = validate.confirmPassword(binding.editTextPassword,
-                binding.editTextConfirmPassword)
+            confirmPasswordInputLayout.error = validate.confirmPassword(
+                binding.editTextPassword,
+                binding.editTextConfirmPassword
+            )
 
             if (usernameInputLayout.error == null &&
                 emailInputLayout.error == null &&
