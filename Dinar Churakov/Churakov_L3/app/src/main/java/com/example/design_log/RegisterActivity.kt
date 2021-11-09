@@ -17,17 +17,14 @@ class RegisterActivity : AppCompatActivity() {
         val passwordInputLayout = binding.inputLayoutPassword
         val usernameInputLayout = binding.inputLayoutName
         val confirmPasswordInputLayout = binding.inputLayoutConfirmPassword
-        val email = binding.editTextEmail
-        val password = binding.editTextPassword
-        val username = binding.editTextName
-        val confirmPassword = binding.editTextConfirmPassword
         val validate = Validator(this)
 
         binding.registerButton.setOnClickListener {
-            usernameInputLayout.error = validate.validateName(username)
-            emailInputLayout.error = validate.validateEmail(email)
-            passwordInputLayout.error = validate.validatePassword(password)
-            confirmPasswordInputLayout.error = validate.confirmPassword(password, confirmPassword)
+            usernameInputLayout.error = validate.validateName(binding.editTextName)
+            emailInputLayout.error = validate.validateEmail(binding.editTextEmail)
+            passwordInputLayout.error = validate.validatePassword(binding.editTextPassword)
+            confirmPasswordInputLayout.error = validate.confirmPassword(binding.editTextPassword,
+                binding.editTextConfirmPassword)
 
             if (usernameInputLayout.error == null &&
                 emailInputLayout.error == null &&
@@ -35,7 +32,7 @@ class RegisterActivity : AppCompatActivity() {
                 confirmPasswordInputLayout.error == null
             ) {
                 val intent = Intent(this, ProfileActivity::class.java)
-                intent.putExtra("name", "Welcome ${username.text}")
+                intent.putExtra("Name", binding.editTextName.text.toString())
                 startActivity(intent)
             }
         }

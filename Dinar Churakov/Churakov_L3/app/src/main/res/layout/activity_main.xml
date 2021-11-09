@@ -8,7 +8,6 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/todo"
@@ -17,7 +16,6 @@
         android:src="@drawable/ic_eclipse_left" />
 
     <ImageView
-        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/todo"
@@ -26,7 +24,7 @@
         android:src="@drawable/ic_eclipse_top" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/mainImageMainActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="164dp"
@@ -37,7 +35,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/get_started_button"
+        android:id="@+id/getStartedButton"
         style="@style/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -47,12 +45,12 @@
         android:paddingVertical="10dp"
         android:text="@string/main_button"
         app:cornerRadius="15dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintEnd_toEndOf="@+id/secondaryText"
+        app:layout_constraintStart_toStartOf="@+id/secondaryText"
+        app:layout_constraintTop_toBottomOf="@+id/secondaryText" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/mainText"
         style="@style/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -60,12 +58,12 @@
         android:text="@string/main_text_main"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/imageView4"
-        app:layout_constraintStart_toStartOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintEnd_toEndOf="@+id/mainImageMainActivity"
+        app:layout_constraintStart_toStartOf="@+id/mainImageMainActivity"
+        app:layout_constraintTop_toBottomOf="@+id/mainImageMainActivity" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/secondaryText"
         style="@style/text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -73,8 +71,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="60dp"
         android:text="@string/main_description"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintEnd_toEndOf="@+id/mainText"
+        app:layout_constraintStart_toStartOf="@+id/mainText"
+        app:layout_constraintTop_toBottomOf="@+id/mainText" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

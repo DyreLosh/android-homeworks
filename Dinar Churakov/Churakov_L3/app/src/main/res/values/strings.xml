@@ -19,7 +19,7 @@
     <string name="sign_up">Sign Up</string>
     <string name="main_text_main">Let’s get things done on time</string>
     <string name="todo">TODO</string>
-    <string name="welcome_profile">Welcome Anond</string>
+    <string name="welcome_profile">Welcome, %s!</string>
     <string name="checkbox_text_1">Learn Javascript by 11am</string>
     <string name="checkbox_text_2">Edit Youtube video by 1pm</string>
     <string name="checkbox_text_3">Have Lunch by 2pm</string>

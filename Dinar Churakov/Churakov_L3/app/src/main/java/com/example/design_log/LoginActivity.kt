@@ -12,6 +12,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        
         val email = binding.editTextEmailLogin
         val password = binding.editTextPasswordLogin
         val emailInputLayout = binding.inputLayoutEmailLogin
@@ -33,7 +34,7 @@ class LoginActivity : AppCompatActivity() {
                 passwordInputLayout.error == null
             ) {
                 val intent = Intent(this, ProfileActivity::class.java)
-                intent.putExtra("name", "Welcome ${email.text}")
+                intent.putExtra("Name", email.text.toString())
                 startActivity(intent)
             }
         }

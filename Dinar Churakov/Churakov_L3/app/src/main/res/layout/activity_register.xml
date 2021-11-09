@@ -8,7 +8,6 @@
     android:background="@color/back">
 
     <ImageView
-        android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/todo"
@@ -17,7 +16,6 @@
         app:srcCompat="@drawable/ic_eclipse_left" />
 
     <ImageView
-        android:id="@+id/imageView7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/todo"
@@ -26,11 +24,11 @@
         app:srcCompat="@drawable/ic_eclipse_top" />
 
     <TextView
-        android:id="@+id/regAct_welcome_text"
+        android:id="@+id/mainTextRegisterActivity"
         style="@style/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="105dp"
         android:text="@string/welcome_register"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -39,23 +37,23 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/regAct_weHelp_text"
+        android:id="@+id/secondaryTextRegisterActivity"
         style="@style/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/main_text_register"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="@+id/regAct_welcome_text"
-        app:layout_constraintStart_toStartOf="@+id/regAct_welcome_text"
-        app:layout_constraintTop_toBottomOf="@+id/regAct_welcome_text" />
+        app:layout_constraintEnd_toEndOf="@+id/mainTextRegisterActivity"
+        app:layout_constraintStart_toStartOf="@+id/mainTextRegisterActivity"
+        app:layout_constraintTop_toBottomOf="@+id/mainTextRegisterActivity" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/inputLayoutName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:boxBackgroundColor="@color/white"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="15dp"
         android:hint="@string/name_hint"
         app:hintTextColor="@color/black"
         app:boxStrokeWidth="0dp"
@@ -67,9 +65,9 @@
         app:boxCornerRadiusTopEnd="@dimen/box_corner_radius"
         app:boxCornerRadiusBottomStart="@dimen/box_corner_radius"
         app:boxCornerRadiusTopStart="@dimen/box_corner_radius"
-        app:layout_constraintEnd_toEndOf="@+id/regAct_weHelp_text"
-        app:layout_constraintStart_toStartOf="@+id/regAct_weHelp_text"
-        app:layout_constraintTop_toBottomOf="@+id/regAct_weHelp_text">
+        app:layout_constraintEnd_toEndOf="@+id/secondaryTextRegisterActivity"
+        app:layout_constraintStart_toStartOf="@+id/secondaryTextRegisterActivity"
+        app:layout_constraintTop_toBottomOf="@+id/secondaryTextRegisterActivity">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/editTextName"
@@ -133,7 +131,7 @@
             android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textVisiblePassword"/>
+            android:inputType="textPassword"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
