@@ -33,7 +33,7 @@ class LoginActivity : AppCompatActivity() {
                 passwordInputLayout.error == null
             ) {
                 val intent = Intent(this, ProfileActivity::class.java)
-                intent.putExtra("name", "Welcome ${email.text.toString()}")
+                intent.putExtra("name", "Welcome ${email.text}")
                 startActivity(intent)
             }
         }

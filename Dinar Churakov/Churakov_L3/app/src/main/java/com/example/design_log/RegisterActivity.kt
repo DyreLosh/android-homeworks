@@ -35,7 +35,7 @@ class RegisterActivity : AppCompatActivity() {
                 confirmPasswordInputLayout.error == null
             ) {
                 val intent = Intent(this, ProfileActivity::class.java)
-                intent.putExtra("name", "Welcome ${username.text.toString()}")
+                intent.putExtra("name", "Welcome ${username.text}")
                 startActivity(intent)
             }
         }

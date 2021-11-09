@@ -3,7 +3,6 @@ package com.example.design_log.validation
 import android.content.Context
 import android.widget.EditText
 import com.example.design_log.R
-import com.google.android.material.textfield.TextInputLayout
 
 class Validator(private val context: Context) {
 
