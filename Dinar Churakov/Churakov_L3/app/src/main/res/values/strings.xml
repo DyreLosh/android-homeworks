@@ -21,6 +21,8 @@
     <string name="todo">TODO</string>
     <string name="welcome_profile">Welcome, %s!</string>
     <string name="checkbox_text_1">Learn Javascript by 11am</string>
+    <string name="error_empty">Поле пустое! Введите данные.</string>
+    <string name="error_password_empty">Введите пароль выше!</string>
     <string name="checkbox_text_2">Edit Youtube video by 1pm</string>
     <string name="checkbox_text_3">Have Lunch by 2pm</string>
     <string name="checkbox_text_4">Visit parents at 4pm</string>
