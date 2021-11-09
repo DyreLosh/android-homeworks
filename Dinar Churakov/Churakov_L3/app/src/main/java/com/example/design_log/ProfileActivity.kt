@@ -9,6 +9,8 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val name = intent.extras?.getString("name")
+        binding.profActWelcomeText.text = name
 
         binding.imageButtonLogOut.setOnClickListener {
             finish()

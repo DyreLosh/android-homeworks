@@ -21,8 +21,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@string/todo"
-            app:srcCompat="@drawable/ic_white_1"
-            tools:ignore="ImageContrastCheck" />
+            app:srcCompat="@drawable/ic_white_1" />
 
         <ImageView
             android:id="@+id/imageView15"
@@ -39,8 +38,7 @@
             android:layout_marginTop="48dp"
             android:layout_marginEnd="16dp"
             android:contentDescription="@string/todo"
-            app:srcCompat="@drawable/ic_log_out"
-            tools:ignore="RtlHardcoded" />
+            app:srcCompat="@drawable/ic_log_out" />
 
         <ImageView
             android:id="@+id/ava_image"
@@ -59,7 +57,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="90dp"
             android:fontFamily="@font/poppins"
-            android:text="@string/textview"
+            android:text="@string/welcome_profile"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
@@ -87,8 +85,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="250dp"
             android:contentDescription="@string/todo"
-            app:srcCompat="@drawable/ic_plus_square"
-            tools:ignore="ImageContrastCheck" />
+            app:srcCompat="@drawable/ic_plus_square" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -105,27 +102,27 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:buttonTint="@color/yellow_button"
-                    android:text="@string/learn_javascript_by_11am" />
+                    android:text="@string/checkbox_text_1" />
 
                 <CheckBox
                     android:id="@+id/checkBox8"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/edit_youtube_video_by_1pm"
+                    android:text="@string/checkbox_text_2"
                     android:buttonTint="@color/yellow_button" />
 
                 <CheckBox
                     android:id="@+id/checkBox7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/have_lunch_by_2pm"
+                    android:text="@string/checkbox_text_3"
                     android:buttonTint="@color/yellow_button"/>
 
                 <CheckBox
                     android:id="@+id/checkBox6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/visit_parents_at_4pm"
+                    android:text="@string/checkbox_text_4"
                     android:buttonTint="@color/yellow_button"/>
 
                 <CheckBox
@@ -133,14 +130,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:buttonTint="@color/yellow_button"
-                    android:text="@string/research_on_ui_designs"
-                    tools:ignore="DuplicateSpeakableTextCheck" />
+                    android:text="@string/checkbox_text_5" />
 
                 <CheckBox
                     android:id="@+id/checkBox4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/research_on_ui_designs"
+                    android:text="@string/checkbox_text_5"
                     android:buttonTint="@color/yellow_button"/>
 
                 <CheckBox

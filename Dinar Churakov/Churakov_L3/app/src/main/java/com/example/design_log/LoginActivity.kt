@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.design_log.databinding.ActivityLoginBinding
-import com.example.design_log.validation.Validation
+import com.example.design_log.validation.Validator
 
 class LoginActivity : AppCompatActivity() {
 
@@ -14,7 +14,9 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
         val email = binding.editTextEmailLogin
         val password = binding.editTextPasswordLogin
-        val validate = Validation(this)
+        val emailInputLayout = binding.inputLayoutEmailLogin
+        val passwordInputLayout = binding.inputLayoutPasswordLogin
+        val validate = Validator(this)
 
         binding.signUpTextButton.setOnClickListener {
 
@@ -24,14 +26,14 @@ class LoginActivity : AppCompatActivity() {
 
         binding.signInButton.setOnClickListener {
 
-            email.error = validate.validateEmail(email)
-            password.error = validate.validatePassword(password)
+            emailInputLayout.error = validate.validateEmail(email)
+            passwordInputLayout.error = validate.validatePassword(password)
 
-            if (validate.validateEmail(email) == null &&
-                validate.validatePassword(password) == null
+            if (emailInputLayout.error == null &&
+                passwordInputLayout.error == null
             ) {
-
                 val intent = Intent(this, ProfileActivity::class.java)
+                intent.putExtra("name", "Welcome ${email.text.toString()}")
                 startActivity(intent)
             }
         }
