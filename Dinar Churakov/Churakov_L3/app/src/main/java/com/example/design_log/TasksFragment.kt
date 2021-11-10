@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.design_log.databinding.FragmentTasksBinding
 
-class TasksFragment: Fragment() {
+class TasksFragment : Fragment() {
 
     lateinit var binding: FragmentTasksBinding
 

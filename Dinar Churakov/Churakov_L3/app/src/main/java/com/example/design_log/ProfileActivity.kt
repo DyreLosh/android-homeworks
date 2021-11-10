@@ -12,7 +12,9 @@ class ProfileActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.bottomNavigation.setOnItemSelectedListener { menuItem ->
-            when(menuItem.itemId) {
+            when(
+                menuItem.itemId
+            ) {
                 R.id.menuHome -> {
                     supportFragmentManager
                         .beginTransaction()
