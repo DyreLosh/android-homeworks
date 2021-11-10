@@ -38,5 +38,7 @@
     <string name="reg_complete">Регистрация завершена</string>
     <string name="error_confirm">Пароли не совпадают</string>
     <string name="error_username_more4">Введи больше 4 символов</string>
+    <string name="tasks_menu_item">Tasks</string>
+    <string name="profile_menu_item">Profile</string>
 
 </resources>
