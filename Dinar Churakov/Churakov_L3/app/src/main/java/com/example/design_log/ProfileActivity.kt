@@ -10,11 +10,25 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val name = intent.extras?.getString("Name")
-        binding.welcomeTextProfileActivity.text = getString(R.string.welcome_profile, name)
 
-        binding.logOutButton.setOnClickListener {
-            finish()
+        binding.bottomNavigation.setOnItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.menuHome -> {
+                    supportFragmentManager
+                        .beginTransaction()
+                        .replace(R.id.fragmentContainer, TasksFragment())
+                        .commit()
+                    true
+                }
+                R.id.menuProfile -> {
+                    supportFragmentManager
+                        .beginTransaction()
+                        .replace(R.id.fragmentContainer, ProfileFragment())
+                        .commit()
+                    true
+                }
+                else -> true
+            }
         }
     }
 }

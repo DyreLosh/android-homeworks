@@ -4,156 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfileActivity"
-    android:background="@color/back">
+    android:background="@color/back"
+    tools:context=".ProfileActivity">
 
-    <FrameLayout
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainer"
+        android:name="com.example.design_log.TasksFragment"
         android:layout_width="match_parent"
-        android:layout_height="255dp"
-        android:background="@color/yellow_button"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/todo"
-            app:srcCompat="@drawable/ic_white_1" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/todo"
-            app:srcCompat="@drawable/ic_white_2" />
-
-        <ImageView
-            android:id="@+id/logOutButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end"
-            android:layout_marginTop="48dp"
-            android:layout_marginEnd="16dp"
-            android:contentDescription="@string/todo"
-            app:srcCompat="@drawable/ic_log_out" />
-
-        <ImageView
-            android:id="@+id/avaImage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="84dp"
-            android:contentDescription="@string/todo"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:srcCompat="@drawable/drug" />
-
-        <TextView
-            android:id="@+id/welcomeTextProfileActivity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="90dp"
-            android:fontFamily="@font/poppins"
-            android:text="@string/welcome_profile"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/avaImage"
-            app:layout_constraintStart_toStartOf="@+id/avaImage"
-            app:layout_constraintTop_toBottomOf="@+id/avaImage" />
-
-    </FrameLayout>
-
-    <FrameLayout
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
         android:layout_width="match_parent"
-        android:layout_marginEnd="45dp"
-        android:layout_marginStart="45dp"
-        android:layout_height="250dp"
-        android:layout_marginBottom="48dp"
-        android:orientation="vertical"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <ImageView
-            android:id="@+id/newCheckboxButton"
-            android:layout_width="37dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="250dp"
-            android:contentDescription="@string/todo"
-            app:srcCompat="@drawable/ic_plus_square" />
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="224dp"
-            android:layout_marginTop="27dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <CheckBox
-                    android:id="@+id/checkBox9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/yellow_button"
-                    android:text="@string/checkbox_text_1" />
-
-                <CheckBox
-                    android:id="@+id/checkBox8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/checkbox_text_2"
-                    android:buttonTint="@color/yellow_button" />
-
-                <CheckBox
-                    android:id="@+id/checkBox7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/checkbox_text_3"
-                    android:buttonTint="@color/yellow_button"/>
-
-                <CheckBox
-                    android:id="@+id/checkBox6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/checkbox_text_4"
-                    android:buttonTint="@color/yellow_button"/>
-
-                <CheckBox
-                    android:id="@+id/checkBox5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/yellow_button"
-                    android:text="@string/checkbox_text_5" />
-
-                <CheckBox
-                    android:id="@+id/checkBox4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/checkbox_text_5"
-                    android:buttonTint="@color/yellow_button"/>
-
-                <CheckBox
-                    android:id="@+id/checkBox3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/checkbox"
-                    android:buttonTint="@color/yellow_button"/>
-            </LinearLayout>
-        </ScrollView>
-
-        <TextView
-            android:id="@+id/dailyTasksText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins"
-            android:text="@string/daily_tasks"
-            android:textColor="@color/black"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-
-    </FrameLayout>
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
