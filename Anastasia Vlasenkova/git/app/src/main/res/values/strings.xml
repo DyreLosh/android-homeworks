@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">My Application </string>
+    <string name="main_title">Welcome Back!</string>
+    <string name="main_help">Forgot Password</string>
+    <string name="main_question">Don’t have an account?</string>
+    <string name="main_button">Sign In</string>
+    <string name="main_link">Sign Up</string>
+    <string name="main_email_hint">Enter your email</string>
+    <string name="main_pass_hint">Confirm password</string>
+    <string name="register_title">Welcome Onboard!</string>
+    <string name="register_description">We help you meet up you tasks on time.</string>
+    <string name="register_name_hint">Enter your full name</string>
+    <string name="register_email_hint">Enter your email</string>
+    <string name="register_pass_hint">Enter password</string>
+    <string name="register_confirm_pass_hint">Confirm password</string>
+    <string name="register_button">Register</string>
+    <string name="register_link">Sign Up</string>
+    <string name="register_question">Already have an account?</string>
+    <string name="splash_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus praesent purus tincidunt ut cursus vitae. Nisl, vitae nulla lectus tortor, est a aliquam. Pretium netus </string>
+    <string name="splash_title">Let’s get things done on time</string>
+    <string name="splash_button">Get Started</string>
+    <string name="home_title">Welcome, %1$s</string>
+    <string name="content_description">picture</string>
+    <string name="email_error">Enter the correct email</string>
+    <string name="error_confirm_password">Password a not similar</string>
+    <string name="error_empty_name">Enter a correct name</string>
+    <string name="error_empty">The field shouldn’t be empty</string>
+    <string name="password_error">Enter the correct password</string>
+</resources>
