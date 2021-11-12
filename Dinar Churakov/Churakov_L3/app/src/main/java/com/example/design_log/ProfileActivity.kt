@@ -18,17 +18,15 @@ class ProfileActivity : AppCompatActivity() {
                         .beginTransaction()
                         .replace(R.id.fragmentContainer, TasksFragment())
                         .commit()
-                    true
                 }
                 R.id.menuProfile -> {
                     supportFragmentManager
                         .beginTransaction()
                         .replace(R.id.fragmentContainer, ProfileFragment())
                         .commit()
-                    true
                 }
-                else -> true
             }
+            true
         }
     }
 }
