@@ -10,7 +10,6 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         binding.bottomNavigation.setOnItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.menuHome -> {
