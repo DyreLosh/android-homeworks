@@ -1,4 +1,4 @@
-package com.example.design_log
+package com.example.design_log.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
