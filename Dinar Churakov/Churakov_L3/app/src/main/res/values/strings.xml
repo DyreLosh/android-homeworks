@@ -1,44 +1,52 @@
 <resources>
     <string name="app_name">Design</string>
-    <string name="main_button">Get Started</string>
-    <string name="main_description">Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Tellus praesent purus<br />
-        tincidunt ut cursus vitae. Nisl, vitae nulla<br />
-        lectus tortor, est a aliquam. Pretium netus </string>
-    <string name="sign_in_button">Sign In</string>
-    <string name="register_button">Register</string>
+    <!-- Hint -->
     <string name="confirm_password_hint">Confirm password</string>
     <string name="password_hint">Enter password</string>
     <string name="email_hint">Enter your email</string>
     <string name="name_hint">Enter your full name</string>
+    <!-- Error -->
+    <string name="error_empty">Поле пустое! Введите данные.</string>
+    <string name="error_password_empty">Введите пароль выше!</string>
+    <string name="error_email_more8">Введите больше 8 знаков</string>
+    <string name="error_email_true">Введите правильную почту</string>
+    <string name="error_confirm">Пароли не совпадают</string>
+    <string name="error_username_more4">Введи больше 4 символов</string>
+    <!-- Button -->
+    <string name="sign_in_button">Sign In</string>
+    <string name="register_button">Register</string>
+    <string name="main_button">Get Started</string>
+    <string name="forgot_password_button">Forgot password</string>
+    <!-- Text -->
+    <string name="tab_work">Работа</string>
+    <string name="tab_game">Развлечения</string>
+    <string name="tab_study">Учеба</string>
+    <string name="have_acc_text">Already have an account?</string>
     <string name="main_text_register">We help you meet up you tasks on time</string>
     <string name="welcome_register">Welcome Onboard!</string>
     <string name="welcome_login">Welcome Back!</string>
-    <string name="forgot_password_button">Forgot password</string>
     <string name="dont_acc_text">Don\'t have an account?</string>
-    <string name="sign_up">Sign Up</string>
     <string name="main_text_main">Let’s get things done on time</string>
+    <string name="sign_up">Sign Up</string>
     <string name="todo">TODO</string>
     <string name="welcome_profile">Welcome, %s!</string>
+    <string name="daily_tasks">Daily Tasks</string>
+    <string name="tasks_list">Tasks List</string>
+    <string name="complete_login">Вход выполнен</string>
+    <string name="at">\@</string>
+    <string name="reg_complete">Регистрация завершена</string>
+    <string name="tasks_menu_item">Tasks</string>
+    <string name="profile_menu_item">Profile</string>
+    <string name="main_description">Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Tellus praesent purus<br />
+        tincidunt ut cursus vitae. Nisl, vitae nulla<br />
+        lectus tortor, est a aliquam. Pretium netus </string>
+    <!-- Checkbox -->
     <string name="checkbox_text_1">Learn Javascript by 11am</string>
-    <string name="error_empty">Поле пустое! Введите данные.</string>
-    <string name="error_password_empty">Введите пароль выше!</string>
     <string name="checkbox_text_2">Edit Youtube video by 1pm</string>
     <string name="checkbox_text_3">Have Lunch by 2pm</string>
     <string name="checkbox_text_4">Visit parents at 4pm</string>
     <string name="checkbox_text_5">Research on UI Designs</string>
     <string name="checkbox">CheckBox</string>
-    <string name="daily_tasks">Daily Tasks</string>
-    <string name="tasks_list">Tasks List</string>
-    <string name="have_acc_text">Already have an account?</string>
-    <string name="error_email_more8">Введите больше 8 знаков</string>
-    <string name="error_email_true">Введите правильную почту</string>
-    <string name="complete_login">Вход выполнен</string>
-    <string name="at">\@</string>
-    <string name="reg_complete">Регистрация завершена</string>
-    <string name="error_confirm">Пароли не совпадают</string>
-    <string name="error_username_more4">Введи больше 4 символов</string>
-    <string name="tasks_menu_item">Tasks</string>
-    <string name="profile_menu_item">Profile</string>
 
 </resources>

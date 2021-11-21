@@ -7,129 +7,22 @@
     tools:context=".fragments.TasksFragment"
     android:background="@color/back">
 
-    <ImageView
-        android:layout_width="wrap_content"
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_eclipse_left"
-        android:contentDescription="@string/todo" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_eclipse_top"
-        android:contentDescription="@string/todo" />
-
-    <TextView
-        android:id="@+id/tasksListText"
-        style="@style/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="@string/tasks_list"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:backgroundTint="@color/back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <FrameLayout
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
         android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginEnd="45dp"
-        android:layout_marginBottom="184dp"
-        android:orientation="vertical"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tasksListText"
-        app:layout_constraintStart_toStartOf="@+id/tasksListText"
-        app:layout_constraintTop_toBottomOf="@+id/tasksListText">
-
-        <TextView
-            android:id="@+id/dailyTasksText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/poppins"
-            android:text="@string/daily_tasks"
-            android:textColor="@color/black"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/newCheckboxButton"
-            android:layout_width="37dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="250dp"
-            android:contentDescription="@string/todo"
-            app:srcCompat="@drawable/ic_plus_square" />
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="224dp"
-            android:layout_marginTop="27dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <CheckBox
-                    android:id="@+id/checkBox9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/yellow_button"
-                    android:text="@string/checkbox_text_1" />
-
-                <CheckBox
-                    android:id="@+id/checkBox8"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/yellow_button"
-                    android:text="@string/checkbox_text_2" />
-
-                <CheckBox
-                    android:id="@+id/checkBox7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/yellow_button"
-                    android:text="@string/checkbox_text_3" />
-
-                <CheckBox
-                    android:id="@+id/checkBox6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/yellow_button"
-                    android:text="@string/checkbox_text_4" />
-
-                <CheckBox
-                    android:id="@+id/checkBox5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/yellow_button"
-                    android:text="@string/checkbox_text_5" />
-
-                <CheckBox
-                    android:id="@+id/checkBox4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/yellow_button"
-                    android:text="@string/checkbox_text_5" />
-
-                <CheckBox
-                    android:id="@+id/checkBox3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:buttonTint="@color/yellow_button"
-                    android:text="@string/checkbox" />
-
-            </LinearLayout>
-
-        </ScrollView>
-
-    </FrameLayout>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

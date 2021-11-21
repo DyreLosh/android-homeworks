@@ -22,8 +22,7 @@ class ProfileFragment : Fragment() {
             activity?.finish()
         }
         val name = activity?.intent?.extras?.getString("Name")
-        binding.welcomeTextProfileActivity.text = getString(R.string.welcome_profile, name)
-
+        binding.collapsingToolbar.title = getString(R.string.welcome_profile, name)
         return binding.root
     }
 }
