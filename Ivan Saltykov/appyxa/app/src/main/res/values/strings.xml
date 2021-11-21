@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">APP</string>
+
+    <!--Ошибки в полях ввода-->
+    <string name="error_password">The password must be at least 8 characters long</string>
+    <string name="error_email">The mail must contain at least 7 characters and a at (@)</string>
+    <string name="error_confirmpassword">Repeat the password!!!</string>
+    <string name="error_name">Fields should not be empty</string>
+
+    <!--Поля ввода данных пользователя-->
+    <string name="user_email">Enter your email</string>
+    <string name="user_password">Enter password</string>
+    <string name="user_name">Enter your full name</string>
+    <string name="user_confirmpassword">Confirm password</string>
+
+
+    <!--Строки GetStarted Activity-->
+    <string name="getstarted_greeting">Let’s get things done on time</string>
+    <string name="getstarted_greeting2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tellus praesent purus tincidunt ut cursus vitae. Nisl, vitae nulla lectus tortor, est a aliquam. Pretium netus</string>
+    <string name="getstarted_button">Get Started</string>
+
+    <!--Строки Login Activity -->
+    <string name="login_greeting">Welcome Back!</string>
+    <string name="login_forgot">Forgot Password</string>
+    <string name="login_button">Sign In</string>
+    <string name="login_account">Don’t have an account?</string>
+    <string name="login_signup">Sign Up</string>
+
+    <!--Строки Register Activity-->
+    <string name="register_greeting">Welcome Onboard!</string>
+    <string name="register_greeting2">We help you meet up you tasks on time.</string>
+    <string name="register_button">Register</string>
+    <string name="register_account">Already have an account?</string>
+    <string name="register_signin">Sign In</string>
+
+    <!--Строки Profile Activity-->
+    <string name="profile_name">Welcome %s!</string>
+</resources>

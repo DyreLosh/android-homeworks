@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:id="@+id/profileActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/yellow_button"
+            android:id="@+id/profileActivityName"
+            android:layout_gravity="top">
+            <ImageView
+                android:id="@+id/imageViewElips1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_white_elips_horizontal"
+                app:layout_constraintStart_toStartOf="@+id/profileActivityName"
+                app:layout_constraintTop_toTopOf="@+id/profileActivityName" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_white_elips_vertical"
+                android:id="@+id/imageViewElips2"
+                app:layout_constraintStart_toStartOf="@+id/imageViewElips1"
+                app:layout_constraintTop_toTopOf="@+id/imageViewElips1"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutName">
+            <ImageView
+                android:id="@+id/imageViewProfileOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_exit"
+                android:layout_gravity="top|end"
+                android:layout_margin="40dp"/>
+            <ImageView
+                android:id="@+id/imageViewAvatar"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_profile_avatar"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"/>
+            <TextView
+                android:id="@+id/textViewProfileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

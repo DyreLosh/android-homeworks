@@ -3,8 +3,6 @@ package com.example.design_log
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.design_log.databinding.ActivityProfileBinding
-import com.example.design_log.fragments.ProfileFragment
-import com.example.design_log.fragments.TasksFragment
 
 class ProfileActivity : AppCompatActivity() {
 
@@ -12,6 +10,7 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         binding.bottomNavigation.setOnItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.menuHome -> {
