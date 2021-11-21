@@ -5,7 +5,6 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.design_log.fragments.TasksFragment
 import com.example.design_log.fragments.ViewPagerFragment
 
-
 class MyPagerAdapter(fragment: TasksFragment) : FragmentStateAdapter(fragment) {
 
     override fun getItemCount() = 3

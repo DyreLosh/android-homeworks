@@ -22,7 +22,7 @@ class TasksFragment() : Fragment() {
         binding = FragmentTasksBinding.inflate(inflater, container, false)
         binding.viewPager.adapter = MyPagerAdapter(this)
         TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
-            tab.text = when(position) {
+            tab.text = when (position) {
                 0 -> getString(R.string.tab_work)
                 1 -> getString(R.string.tab_game)
                 2 -> getString(R.string.tab_study)
