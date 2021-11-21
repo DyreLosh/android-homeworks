@@ -3,6 +3,7 @@ package com.example.design_log
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.design_log.databinding.ActivityProfileBinding
+import com.example.design_log.fragments.ProfileFragment
 
 class ProfileActivity : AppCompatActivity() {
 
