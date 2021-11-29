@@ -5,12 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.design_log.MyPagerAdapter
+import com.example.design_log.viewHolderAdapter.MyPagerAdapter
 import com.example.design_log.R
 import com.example.design_log.databinding.FragmentTasksBinding
 import com.google.android.material.tabs.TabLayoutMediator
 
-class TasksFragment() : Fragment() {
+class TasksFragment : Fragment() {
 
     lateinit var binding: FragmentTasksBinding
 
