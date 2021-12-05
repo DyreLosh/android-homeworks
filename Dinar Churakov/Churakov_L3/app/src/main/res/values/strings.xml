@@ -48,5 +48,6 @@
     <string name="checkbox_text_4">Visit parents at 4pm</string>
     <string name="checkbox_text_5">Research on UI Designs</string>
     <string name="checkbox">CheckBox</string>
+    <string name="new_task_button">New Task</string>
 
 </resources>
