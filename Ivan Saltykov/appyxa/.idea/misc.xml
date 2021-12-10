@@ -3,10 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/android-homeworks/Ivan Saltykov/appyxa/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1949367088607595" />
+        <entry key="..\:/android-homeworks/Ivan Saltykov/appyxa/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1949367088607595" />
+        <entry key="..\:/android-homeworks/Ivan Saltykov/appyxa/app/src/main/res/drawable/ic_profile.xml" value="0.1949367088607595" />
+        <entry key="..\:/android-homeworks/Ivan Saltykov/appyxa/app/src/main/res/drawable/ic_tasks.xml" value="0.1949367088607595" />
         <entry key="..\:/android-homeworks/Ivan Saltykov/appyxa/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/android-homeworks/Ivan Saltykov/appyxa/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/android-homeworks/Ivan Saltykov/appyxa/app/src/main/res/layout/activity_profile.xml" value="0.22" />
         <entry key="..\:/android-homeworks/Ivan Saltykov/appyxa/app/src/main/res/layout/activity_register.xml" value="0.22" />
+        <entry key="..\:/android-homeworks/Ivan Saltykov/appyxa/app/src/main/res/layout/fragment_categories.xml" value="0.12" />
+        <entry key="..\:/android-homeworks/Ivan Saltykov/appyxa/app/src/main/res/layout/fragment_category.xml" value="0.1841880341880342" />
+        <entry key="..\:/android-homeworks/Ivan Saltykov/appyxa/app/src/main/res/layout/fragment_profile.xml" value="0.1841880341880342" />
+        <entry key="..\:/android-homeworks/Ivan Saltykov/appyxa/app/src/main/res/layout/fragment_tasks.xml" value="0.1841880341880342" />
+        <entry key="..\:/android-homeworks/Ivan Saltykov/appyxa/app/src/main/res/menu/bottom_navigation_profile.xml" value="0.1841880341880342" />
+        <entry key="..\:/android-homeworks/Ivan Saltykov/appyxa/app/src/main/res/menu/menu.xml" value="0.1841880341880342" />
         <entry key="..\:/android-homeworks/Ivan Saltykov/appyxa/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.19743589743589743" />
         <entry key="..\:/android-homeworks/Ivan Saltykov/appyxa/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.19743589743589743" />
         <entry key="..\:/kotlin/appyxa/appyxa/app/src/main/res/layout/activity_login.xml" value="0.22" />

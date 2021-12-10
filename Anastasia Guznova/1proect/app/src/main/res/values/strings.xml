@@ -26,4 +26,6 @@
     <string name="error_coincidence_password">Пароли не совпадают</string>
     <string name="error_emptiness">Поле пустое, введите текст</string>
     <string name="error_name">Проверьте свое имя</string>
+    <string name="profile_fragment_title">Profile</string>
+    <string name="task_fragment_title">Task List</string>
 </resources>

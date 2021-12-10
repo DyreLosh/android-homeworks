@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".GetStartedActivity">
+
+    <ImageView
+        android:id="@+id/imageViewGetStartedCircles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image_yellow_circles" />
+
+    <ImageView
+        android:id="@+id/imageViewGetStartedCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/get_started_image" />
+
+    <TextView
+        android:id="@+id/textViewGetStartedMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins"
+        android:includeFontPadding="false"
+        android:text="@string/get_started_main_text"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewGetStartedCenter"
+        app:layout_constraintStart_toStartOf="@+id/imageViewGetStartedCenter"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewGetStartedCenter" />
+
+    <TextView
+        android:id="@+id/textViewGetStartedAdditional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/get_started_additional_text"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/textViewGetStartedMain"
+        app:layout_constraintStart_toStartOf="@+id/textViewGetStartedMain"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGetStartedMain" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButtonGetStarted"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/yellow"
+        android:elevation="6dp"
+        android:fontFamily="@font/poppins_bold"
+        android:stateListAnimator="@null"
+        android:text="@string/get_started_button_text"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:translationZ="4dp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

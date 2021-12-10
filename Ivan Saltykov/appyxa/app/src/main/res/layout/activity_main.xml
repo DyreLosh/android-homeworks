@@ -24,11 +24,11 @@
         android:id="@+id/textViewGetStartedGreeting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
         android:text="@string/getstarted_greeting"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="@+id/imageViewGetStartedPeople"
         app:layout_constraintStart_toStartOf="@+id/imageViewGetStartedPeople"
         app:layout_constraintTop_toBottomOf="@+id/imageViewGetStartedPeople" />

@@ -1,7 +1,7 @@
 package com.example.app
 
-import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.app.databinding.ActivityProfileBinding
 
@@ -13,12 +13,24 @@ class ProfileActivity : AppCompatActivity() {
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val name = intent.extras?.getString("Name")
-        binding.textViewProfileName.text = getString(R.string.profile_name, name)
-
-        binding.imageViewProfileOut.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
+        binding.bottomNavigationView.setOnItemSelectedListener { menuitem ->
+            when (menuitem.itemId) {
+                R.id.menuFragmentprofile -> {
+                    supportFragmentManager
+                        .beginTransaction()
+                        .replace(R.id.fragmentcontainerprofile, ProfileFragment())
+                        .commit()
+                    Toast.makeText(this, "Profile", Toast.LENGTH_SHORT).show()
+                }
+                R.id.menuFragmenttasks -> {
+                    supportFragmentManager
+                        .beginTransaction()
+                        .replace(R.id.fragmentcontainerprofile, TasksFragment())
+                        .commit()
+                    Toast.makeText(this, "Tasks", Toast.LENGTH_SHORT).show()
+                }
+            }
+            return@setOnItemSelectedListener true
         }
     }
 }

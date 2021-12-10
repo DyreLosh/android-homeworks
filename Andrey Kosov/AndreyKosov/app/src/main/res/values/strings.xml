@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">AndreyKosov</string>
+    <string name="hint_for_name">Enter your full name</string>
+    <string name="hint_for_email">Enter your email</string>
+    <string name="hint_for_password">Enter password</string>
+    <string name="hint_for_confirm_password">Confirm password</string>
+    <string name="registration_text_for_button_register">Register</string>
+    <string name="registration_text_additional">We help you meet up you tasks on time.</string>
+    <string name="registration_text_main">Welcome Onboard!</string>
+    <string name="sign_in_main_text">Welcome Back!</string>
+    <string name="sign_up">SignUp</string>
+    <string name="sign_in_text_for_button_sign_in">Sign In</string>
+    <string name="sign_in_bottom_text">Don\'t have an account?</string>
+    <string name="sign_in_forgot_password">Forgot Password</string>
+    <string name="get_started_main_text">Let’s get things done on time</string>
+    <string name="get_started_additional_text">Lorem ipsum dolor sit amet, consectetur \n
+        adipiscing elit. Tellus praesent purus \n
+        tincidunt ut cursus vitae. Nisl, vitae nulla \n
+        lectus tortor, est a aliquam. Pretium netus</string>
+    <string name="get_started_button_text">Get Started</string>
+    <string name="register_bottom_text">Already have an account?</string>
+    <string name="register_additional_up_text">We help you meet up you tasks on time.</string>
+    <string name="register_button_text">Register</string>
+    <string name="register_bottom_additional_text">Sign in</string>
+    <string name="error_email_length">Email must contain at least 6 characters!</string>
+    <string name="error_email_sign">Email must contain "@"</string>
+    <string name="error_password_length">Password must contain at least 8 characters!</string>
+    <string name="error_password_different">Passwords must match!</string>
+    <string name="profile_greeting">Hello %1$s!</string>
+    <string name="error_name_length">Name must contain at least 4 characters!</string>
+    <string name="error_empty">The field must not be empty</string>
+
+</resources>

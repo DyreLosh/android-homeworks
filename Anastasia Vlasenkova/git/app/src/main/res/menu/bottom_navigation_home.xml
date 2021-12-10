@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuFragmentHomeProfile"
+        android:title="@string/fragment_home_menu_profile"
+        android:icon="@drawable/ic_baseline_account_circle_24"/>
+    <item
+        android:id="@+id/menuFragmentHomeTasksList"
+        android:title="@string/fragment_home_menu_tasks_list"
+        android:icon="@drawable/ic_baseline_assignment_24"/>
+</menu>

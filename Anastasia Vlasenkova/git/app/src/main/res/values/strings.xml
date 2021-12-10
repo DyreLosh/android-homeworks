@@ -26,4 +26,6 @@
     <string name="error_empty_name">Enter a correct name</string>
     <string name="error_empty">The field shouldn’t be empty</string>
     <string name="password_error">Enter the correct password</string>
+    <string name="fragment_home_menu_profile">Profile</string>
+    <string name="fragment_home_menu_tasks_list">Tasks List</string>
 </resources>

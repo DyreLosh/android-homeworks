@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyY"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textMainTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:text="@string/login_greeting"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/loghuman"
+        app:layout_constraintEnd_toEndOf="@+id/textMainTitle"
+        app:layout_constraintStart_toStartOf="@+id/textMainTitle"
+        app:layout_constraintTop_toBottomOf="@+id/textMainTitle" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutMainEmail"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="33dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="28dp"
+        app:boxCornerRadiusBottomStart="28dp"
+        app:boxCornerRadiusTopEnd="28dp"
+        app:boxCornerRadiusTopStart="28dp"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageMain">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextMainEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_hint"
+            android:textColorHint="@color/black"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutMainPassword"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="33dp"
+        app:boxBackgroundColor="@color/white"
+        app:boxCornerRadiusBottomEnd="28dp"
+        app:boxCornerRadiusBottomStart="28dp"
+        app:boxCornerRadiusTopEnd="28dp"
+        app:boxCornerRadiusTopStart="28dp"
+        app:boxStrokeColor="@color/white"
+        app:boxStrokeWidth="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutMainEmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextMainPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_password_hint"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:inputType="textPassword"
+            android:textColorHint="@color/black"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textMainHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/login_password_recovery"
+        android:textColor="@color/yellowY"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputLayoutMainPassword" />
+
+    <TextView
+        android:id="@+id/textMainQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/login_question_registration"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/buttonMain"
+        app:layout_constraintStart_toStartOf="@+id/buttonMain"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMain" />
+
+    <TextView
+        android:id="@+id/textMainLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/login_sign_hint"
+        android:textColor="@color/yellowY"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textMainQuestion"
+        app:layout_constraintStart_toStartOf="@+id/textMainQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/textMainQuestion" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonMain"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="33dp"
+        android:backgroundTint="@color/yellowY"
+        android:text="@string/sing_button"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:elevation="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textMainHelp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

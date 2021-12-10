@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">APP</string>
+    <string name="app_name">TodoAPP</string>
 
     <!--Ошибки в полях ввода-->
     <string name="error_password">The password must be at least 8 characters long</string>
@@ -33,6 +33,27 @@
     <string name="register_account">Already have an account?</string>
     <string name="register_signin">Sign In</string>
 
-    <!--Строки Profile Activity-->
+    <!--Строки Tasks Fragment-->
+    <string name="tasksfragment_text">TasksList</string>
+    <string name="tasks">Daily Tasks</string>
+
+    <!--Строки Bottom Navigation Profile-->
+    <string name="profile_profile">Profile</string>
+    <string name="profile_tasks">Tasks</string>
+
+    <!--Строки задач-->
+    <string name="task1">Learn Javascript by 11am</string>
+    <string name="task2">Edit Youtube video by 1pm</string>
+    <string name="task3">Have Lunch by 2pm</string>
+    <string name="task4">Visit parents at 4pm</string>
+    <string name="task5">Research on UI Designs</string>
+    <string name="task6">Read books by 10pm</string>
+
+    <!--Строки Profile Fragment-->
     <string name="profile_name">Welcome %s!</string>
+
+    <!--Строки Categories Fragment-->
+    <string name="category_work">Work</string>
+    <string name="category_study">Study</string>
+    <string name="category_entertainments">Еntertainment</string>
 </resources>
