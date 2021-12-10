@@ -15,8 +15,8 @@ class TasksAdapter : RecyclerView.Adapter<TaskViewHolder>() {
             ItemTaskBinding.inflate(
                 LayoutInflater.from(parent.context), parent, false
             )
-        )
-    }
+        )}
+
     override fun onBindViewHolder(holder: TaskViewHolder, position: Int) {
         holder.bind(items[position])
     }
