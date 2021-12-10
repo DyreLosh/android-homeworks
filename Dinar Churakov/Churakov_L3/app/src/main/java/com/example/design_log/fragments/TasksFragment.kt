@@ -65,7 +65,7 @@ class TasksFragment : Fragment() {
         binding.recyclerTask.adapter = adapter
         adapter.submitList(tasks)
 
-        binding.newTaskButton.setOnClickListener{
+        binding.newTaskButton.setOnClickListener {
             adapter.addItem(
                 Task(
                     taskText = getString(R.string.checkbox_text_high),
