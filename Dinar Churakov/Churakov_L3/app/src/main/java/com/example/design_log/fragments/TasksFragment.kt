@@ -11,11 +11,8 @@ import com.example.design_log.R
 import com.example.design_log.adapters.TasksAdapter
 import com.example.design_log.data.Task
 import com.example.design_log.databinding.FragmentTasksBinding
-import java.time.LocalDate
 import java.time.LocalDateTime
-import java.time.LocalTime
 import java.time.format.DateTimeFormatter
-import java.time.format.FormatStyle
 
 class TasksFragment : Fragment() {
 
