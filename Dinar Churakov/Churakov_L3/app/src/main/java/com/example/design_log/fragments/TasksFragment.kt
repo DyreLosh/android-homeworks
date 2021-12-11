@@ -12,6 +12,7 @@ import com.example.design_log.adapters.TasksAdapter
 import com.example.design_log.data.Task
 import com.example.design_log.databinding.FragmentTasksBinding
 import java.time.LocalDate
+import java.time.LocalDateTime
 import java.time.LocalTime
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
@@ -28,35 +29,34 @@ class TasksFragment : Fragment() {
     ): View {
         binding = FragmentTasksBinding.inflate(inflater, container, false)
 
-        val time = LocalTime.now().format(DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT))
-        val date = LocalDate.now().format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT))
+        val date = LocalDateTime.now().format(DateTimeFormatter.ofPattern("H.m M.d.y"))
 
         val tasks = listOf(
             Task(
+                checkBox = false,
                 taskText = getString(R.string.checkbox_text_1),
-                time = time.toString(),
-                data = date.toString()
+                date = date.toString()
             ),
             Task(
 
+                checkBox = false,
                 taskText = getString(R.string.checkbox_text_2),
-                time = time.toString(),
-                data = date.toString()
+                date = date.toString()
             ),
             Task(
+                checkBox = false,
                 taskText = getString(R.string.checkbox_text_3),
-                time = time.toString(),
-                data = date.toString()
+                date = date.toString()
             ),
             Task(
+                checkBox = false,
                 taskText = getString(R.string.checkbox_text_4),
-                time = time.toString(),
-                data = date.toString()
+                date = date.toString()
             ),
             Task(
+                checkBox = false,
                 taskText = getString(R.string.checkbox_text_5),
-                time = time.toString(),
-                data = date.toString()
+                date = date.toString()
             )
         )
 
@@ -67,9 +67,9 @@ class TasksFragment : Fragment() {
         binding.newTaskButton.setOnClickListener {
             adapter.addItem(
                 Task(
+                    checkBox = false,
                     taskText = getString(R.string.checkbox_text_high),
-                    time = time.toString(),
-                    data = date.toString()
+                    date = date.toString()
                 )
             )
         }

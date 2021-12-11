@@ -1,7 +1,7 @@
 package com.example.design_log.data
 
 data class Task(
+    val checkBox: Boolean,
     val taskText: String,
-    val time: String,
-    val data: String
+    val date: String
 )
