@@ -1,7 +1,9 @@
 package com.example.design_log.data
 
+import java.time.LocalDateTime
+
 data class Task(
-    val checkBox: Boolean,
+    val tasksCheckBox: Boolean,
     val taskText: String,
-    val date: String
+    val date: LocalDateTime
 )

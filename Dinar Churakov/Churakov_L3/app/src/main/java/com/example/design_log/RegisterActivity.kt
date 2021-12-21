@@ -13,36 +13,40 @@ class RegisterActivity : AppCompatActivity() {
         val binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.registerButton.setOnClickListener {
+            verificationRegister(binding)
+        }
+
+        binding.signInTextButton.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    private fun verificationRegister(binding: ActivityRegisterBinding) {
         val emailInputLayout = binding.inputLayoutEmail
         val passwordInputLayout = binding.inputLayoutPassword
         val usernameInputLayout = binding.inputLayoutName
         val confirmPasswordInputLayout = binding.inputLayoutConfirmPassword
         val validate = Validator(this)
 
-        binding.registerButton.setOnClickListener {
-            usernameInputLayout.error = validate.validateName(binding.editTextName)
-            emailInputLayout.error = validate.validateEmail(binding.editTextEmail)
-            passwordInputLayout.error = validate.validatePassword(binding.editTextPassword)
-            confirmPasswordInputLayout.error = validate.confirmPassword(
-                binding.editTextPassword,
-                binding.editTextConfirmPassword
-            )
+        usernameInputLayout.error = validate.validateName(binding.editTextName)
+        emailInputLayout.error = validate.validateEmail(binding.editTextEmail)
+        passwordInputLayout.error = validate.validatePassword(binding.editTextPassword)
+        confirmPasswordInputLayout.error = validate.confirmPassword(
+            binding.editTextPassword,
+            binding.editTextConfirmPassword
+        )
 
-            if (usernameInputLayout.error == null &&
-                emailInputLayout.error == null &&
-                passwordInputLayout.error == null &&
-                confirmPasswordInputLayout.error == null
-            ) {
-                val intent = Intent(this, ProfileActivity::class.java)
-                intent.putExtra("Name", binding.editTextName.text.toString())
-                startActivity(intent)
-                finish()
-            }
-        }
-
-        binding.signInTextButton.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
+        if (usernameInputLayout.error == null &&
+            emailInputLayout.error == null &&
+            passwordInputLayout.error == null &&
+            confirmPasswordInputLayout.error == null
+        ) {
+            val intent = Intent(this, ProfileActivity::class.java)
+            intent.putExtra("Name", binding.editTextName.text.toString())
             startActivity(intent)
+            finish()
         }
     }
 }

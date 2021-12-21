@@ -12,7 +12,6 @@ import com.example.design_log.adapters.TasksAdapter
 import com.example.design_log.data.Task
 import com.example.design_log.databinding.FragmentTasksBinding
 import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
 
 class TasksFragment : Fragment() {
 
@@ -24,36 +23,35 @@ class TasksFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
+        val date = LocalDateTime.now()
         binding = FragmentTasksBinding.inflate(inflater, container, false)
-
-        val date = LocalDateTime.now().format(DateTimeFormatter.ofPattern("H.m M.d.y"))
 
         val tasks = listOf(
             Task(
-                checkBox = false,
+                tasksCheckBox = false,
                 taskText = getString(R.string.checkbox_text_1),
-                date = date.toString()
+                date = date
             ),
             Task(
 
-                checkBox = false,
+                tasksCheckBox = false,
                 taskText = getString(R.string.checkbox_text_2),
-                date = date.toString()
+                date = date
             ),
             Task(
-                checkBox = false,
+                tasksCheckBox = false,
                 taskText = getString(R.string.checkbox_text_3),
-                date = date.toString()
+                date = date
             ),
             Task(
-                checkBox = false,
+                tasksCheckBox = false,
                 taskText = getString(R.string.checkbox_text_4),
-                date = date.toString()
+                date = date
             ),
             Task(
-                checkBox = false,
+                tasksCheckBox = false,
                 taskText = getString(R.string.checkbox_text_5),
-                date = date.toString()
+                date = date
             )
         )
 
@@ -64,9 +62,9 @@ class TasksFragment : Fragment() {
         binding.newTaskButton.setOnClickListener {
             adapter.addItem(
                 Task(
-                    checkBox = false,
+                    tasksCheckBox = false,
                     taskText = getString(R.string.checkbox_text_high),
-                    date = date.toString()
+                    date = date
                 )
             )
         }

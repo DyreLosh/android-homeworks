@@ -2,6 +2,7 @@ package com.example.design_log
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import com.example.design_log.databinding.ActivityProfileBinding
 import com.example.design_log.fragments.ProfileFragment
 import com.example.design_log.fragments.TasksFragment
@@ -16,19 +17,19 @@ class ProfileActivity : AppCompatActivity() {
         binding.bottomNavigation.setOnItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.menuHome -> {
-                    supportFragmentManager
-                        .beginTransaction()
-                        .replace(R.id.fragmentContainer, TasksFragment())
-                        .commit()
+                    supportBottomNavigation(TasksFragment())
                 }
                 R.id.menuProfile -> {
-                    supportFragmentManager
-                        .beginTransaction()
-                        .replace(R.id.fragmentContainer, ProfileFragment())
-                        .commit()
+                    supportBottomNavigation(ProfileFragment())
                 }
             }
             true
         }
+    }
+    private fun supportBottomNavigation(fragment: Fragment) {
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.fragmentContainer, fragment)
+            .commit()
     }
 }

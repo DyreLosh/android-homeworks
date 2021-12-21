@@ -13,12 +13,6 @@ class LoginActivity : AppCompatActivity() {
         val binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val email = binding.editTextEmailLogin
-        val password = binding.editTextPasswordLogin
-        val emailInputLayout = binding.inputLayoutEmailLogin
-        val passwordInputLayout = binding.inputLayoutPasswordLogin
-        val validate = Validator(this)
-
         binding.signUpTextButton.setOnClickListener {
 
             val intent = Intent(this, RegisterActivity::class.java)
@@ -26,18 +20,26 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.signInButton.setOnClickListener {
+            verificationLogin(binding)
+        }
+    }
 
-            emailInputLayout.error = validate.validateEmail(email)
-            passwordInputLayout.error = validate.validatePassword(password)
+    private fun verificationLogin(binding: ActivityLoginBinding) {
+        val email = binding.editTextEmailLogin
+        val password = binding.editTextPasswordLogin
+        val emailInputLayout = binding.inputLayoutEmailLogin
+        val passwordInputLayout = binding.inputLayoutPasswordLogin
+        val validate = Validator(this)
+        emailInputLayout.error = validate.validateEmail(email)
+        passwordInputLayout.error = validate.validatePassword(password)
 
-            if (emailInputLayout.error == null &&
-                passwordInputLayout.error == null
-            ) {
-                val intent = Intent(this, ProfileActivity::class.java)
-                intent.putExtra("Name", email.text.toString())
-                startActivity(intent)
-                finish()
-            }
+        if (emailInputLayout.error == null &&
+            passwordInputLayout.error == null
+        ) {
+            val intent = Intent(this, ProfileActivity::class.java)
+            intent.putExtra("Name", email.text.toString())
+            startActivity(intent)
+            finish()
         }
     }
 }
