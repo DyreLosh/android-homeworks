@@ -12,7 +12,7 @@ class TaskViewHolder(private val binding: ItemTaskBinding) : RecyclerView.ViewHo
 
     @RequiresApi(Build.VERSION_CODES.O)
     fun bind(task: Task) = with(binding) {
-        checkBox.isChecked = task.tasksCheckBox
+        checkBox.isChecked = task.completedTask
         taskText.text = task.taskText
         dateText.text = LocalDateTime.now().format(DateTimeFormatter.ofPattern("H:m M.d.y"))
 

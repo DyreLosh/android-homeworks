@@ -28,28 +28,27 @@ class TasksFragment : Fragment() {
 
         val tasks = listOf(
             Task(
-                tasksCheckBox = false,
+                completedTask = false,
                 taskText = getString(R.string.checkbox_text_1),
                 date = date
             ),
             Task(
-
-                tasksCheckBox = false,
+                completedTask = false,
                 taskText = getString(R.string.checkbox_text_2),
                 date = date
             ),
             Task(
-                tasksCheckBox = false,
+                completedTask = false,
                 taskText = getString(R.string.checkbox_text_3),
                 date = date
             ),
             Task(
-                tasksCheckBox = false,
+                completedTask = false,
                 taskText = getString(R.string.checkbox_text_4),
                 date = date
             ),
             Task(
-                tasksCheckBox = false,
+                completedTask = false,
                 taskText = getString(R.string.checkbox_text_5),
                 date = date
             )
@@ -62,7 +61,7 @@ class TasksFragment : Fragment() {
         binding.newTaskButton.setOnClickListener {
             adapter.addItem(
                 Task(
-                    tasksCheckBox = false,
+                    completedTask = false,
                     taskText = getString(R.string.checkbox_text_high),
                     date = date
                 )

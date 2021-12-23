@@ -6,22 +6,26 @@ import com.example.design_log.R
 
 class Validator(private val context: Context) {
 
+    companion object {
+        const val USERNAME_LENGTH = 4
+        const val EMAIL_LENGTH = 8
+        const val PASSWORD_LENGTH = 8
+        const val EMAIL_TRUE = "@"
+    }
+
     fun validateName(name: EditText): String? =
         when {
             name.text.toString().isBlank() -> context.getString(R.string.error_empty)
-            name.length() <= ValidatorConst.USERNAME_LENGTH -> {
-                context.getString(R.string.error_username_more4)
-            }
+            name.length() <= USERNAME_LENGTH -> context.getString(R.string.error_username_more4)
+
             else -> null
         }
 
     fun validateEmail(email: EditText): String? =
         when {
             email.text.toString().isBlank() -> context.getString(R.string.error_empty)
-            email.length() <= ValidatorConst.EMAIL_LENGTH -> {
-                context.getString(R.string.error_email_more8)
-            }
-            !(email.text.toString().contains(ValidatorConst.EMAIL_TRUE)) -> {
+            email.length() <= EMAIL_LENGTH -> context.getString(R.string.error_email_more8)
+            !(email.text.toString().contains(EMAIL_TRUE)) -> {
                 context.getString(R.string.error_email_true)
             }
             else -> null
@@ -30,9 +34,8 @@ class Validator(private val context: Context) {
     fun validatePassword(password: EditText): String? =
         when {
             password.text.toString().isBlank() -> context.getString(R.string.error_empty)
-            password.length() <= ValidatorConst.PASSWORD_LENGTH -> {
-                context.getString(R.string.error_email_more8)
-            }
+            password.length() <= PASSWORD_LENGTH -> context.getString(R.string.error_email_more8)
+
             else -> null
         }
 

@@ -1,7 +1,9 @@
 package com.example.design_log.adapters
 
+import android.os.Build
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.annotation.RequiresApi
 import androidx.recyclerview.widget.RecyclerView
 import com.example.design_log.data.Task
 import com.example.design_log.databinding.ItemTaskBinding
@@ -18,6 +20,7 @@ class TasksAdapter : RecyclerView.Adapter<TaskViewHolder>() {
         )
     }
 
+    @RequiresApi(Build.VERSION_CODES.O)
     override fun onBindViewHolder(holder: TaskViewHolder, position: Int) {
         holder.bind(items[position])
     }
