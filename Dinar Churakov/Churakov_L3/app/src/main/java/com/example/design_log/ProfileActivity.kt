@@ -3,19 +3,13 @@ package com.example.design_log
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.isVisible
-import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
 import com.example.design_log.databinding.ActivityProfileBinding
-import com.example.design_log.databinding.FragmentTasksBinding
-import com.example.design_log.fragments.ProfileFragment
-import com.example.design_log.fragments.TasksFragment
 
 class ProfileActivity : AppCompatActivity() {
 
