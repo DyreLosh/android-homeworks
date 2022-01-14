@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Design</string>
+    <string name="app_name">Tasks</string>
     <!-- Hint -->
     <string name="confirm_password_hint">Confirm password</string>
     <string name="password_hint">Enter password</string>
@@ -51,4 +51,8 @@
     <string name="checkbox">CheckBox</string>
     <string name="new_task_button">New Task</string>
 
+    <string name="exit_menu">Exit</string>
+    <string name="navProfileLabel">Profile</string>
+    <string name="navTasksLabel">Tasks</string>
+    <string name="header_email_text">%s</string>
 </resources>

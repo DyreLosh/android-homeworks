@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_tasks"
+    app:startDestination="@id/menuHome">
+
+    <fragment
+        android:id="@+id/menuProfile"
+        android:name="com.example.design_log.fragments.ProfileFragment"
+        android:label="@string/navProfileLabel"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/menuHome"
+        android:name="com.example.design_log.fragments.TasksFragment"
+        android:label="@string/navTasksLabel"
+        tools:layout="@layout/fragment_tasks" />
+</navigation>

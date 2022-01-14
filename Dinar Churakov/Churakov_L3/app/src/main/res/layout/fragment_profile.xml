@@ -20,10 +20,19 @@
             app:title="@string/welcome_profile"
             app:contentScrim="@color/yellow_button">
 
-            <com.google.android.material.appbar.MaterialToolbar
-                android:layout_width="match_parent"
-                android:layout_height="?actionBarSize"
-                app:layout_collapseMode="pin" />
+            <TextView
+                android:id="@+id/welcomeProfileText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welcome_profile"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingEnd="30dp"
+                android:paddingStart="0dp"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="190dp"
+                android:layout_marginStart="20dp"/>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -36,16 +45,6 @@
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/todo"
                 app:srcCompat="@drawable/ic_white_2" />
-
-            <ImageView
-                android:id="@+id/logOutButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="end"
-                android:layout_marginTop="48dp"
-                android:layout_marginEnd="16dp"
-                android:contentDescription="@string/todo"
-                app:srcCompat="@drawable/ic_log_out" />
 
             <ImageView
                 android:id="@+id/avaImage"

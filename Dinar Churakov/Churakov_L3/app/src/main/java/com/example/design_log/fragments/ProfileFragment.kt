@@ -18,11 +18,8 @@ class ProfileFragment : Fragment() {
     ): View {
         binding = FragmentProfileBinding.inflate(inflater, container, false)
 
-        binding.logOutButton.setOnClickListener {
-            activity?.finish()
-        }
         val name = activity?.intent?.extras?.getString("Name")
-        binding.collapsingToolbar.title = getString(R.string.welcome_profile, name)
+        binding.welcomeProfileText.text = getString(R.string.welcome_profile, name)
         return binding.root
     }
 }
