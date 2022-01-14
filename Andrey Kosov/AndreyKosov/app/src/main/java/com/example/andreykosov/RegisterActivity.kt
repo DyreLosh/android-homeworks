@@ -39,6 +39,7 @@ class RegisterActivity : AppCompatActivity() {
                     val intentProfile = Intent(this@RegisterActivity, ProfileActivity::class.java)
                     intentProfile.putExtra("Name", textInputEditTextRegisterName.text.toString())
                     startActivity(intentProfile)
+                    finish()
                 }
             }
         }

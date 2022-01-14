@@ -3,6 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndreyKosov/app/src/main/res/layout/activity_getstarted.xml" value="0.5442708333333334" />
+        <entry key="..\:/AndreyKosov/app/src/main/res/layout/activity_profile.xml" value="0.5442708333333334" />
+        <entry key="..\:/AndreyKosov/app/src/main/res/layout/activity_register.xml" value="0.4302536231884058" />
+        <entry key="..\:/AndreyKosov/app/src/main/res/layout/activity_sign_in.xml" value="0.5442708333333334" />
+        <entry key="..\:/AndreyKosov/app/src/main/res/layout/fragment_profile.xml" value="0.5442708333333334" />
+        <entry key="..\:/AndreyKosov/app/src/main/res/layout/fragment_tasks.xml" value="0.5442708333333334" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/AndreyKosov/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/AndreyKosov/app/src/main/res/layout/activity_getstarted.xml" value="0.28442028985507245" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/AndreyKosov/app/src/main/res/layout/activity_profile.xml" value="0.28442028985507245" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/AndreyKosov/app/src/main/res/layout/activity_register.xml" value="0.28442028985507245" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/AndreyKosov/app/src/main/res/layout/activity_sign_in.xml" value="0.5" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/AndreyKosov/app/src/main/res/layout/fragment_profile.xml" value="0.33" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/AndreyKosov/app/src/main/res/layout/fragment_tasks.xml" value="0.33" />
+        <entry key="..\:/Users/1/AndroidStudioProjects/AndreyKosov/app/src/main/res/menu/bottom_navigation.xml" value="0.3625" />
         <entry key="..\:/Users/andre/AndroidStudioProjects/AndreyKosov/app/src/main/res/drawable/rounded_edittext.xml" value="0.48504273504273504" />
         <entry key="..\:/Users/andre/AndroidStudioProjects/AndreyKosov/app/src/main/res/font/poppins.xml" value="0.16203703703703703" />
         <entry key="..\:/Users/andre/AndroidStudioProjects/AndreyKosov/app/src/main/res/font/poppins_bold.xml" value="0.16203703703703703" />
