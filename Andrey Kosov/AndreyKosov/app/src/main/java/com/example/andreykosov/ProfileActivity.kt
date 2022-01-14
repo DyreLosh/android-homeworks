@@ -1,9 +1,10 @@
 package com.example.andreykosov
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.andreykosov.databinding.ActivityProfileBinding
+import com.example.andreykosov.fragments.ProfileFragment
+import com.example.andreykosov.fragments.TasksFragment
 
 class ProfileActivity : AppCompatActivity() {
     private lateinit var binding: ActivityProfileBinding
@@ -11,11 +12,22 @@ class ProfileActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityProfileBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val userName = intent.extras?.getString("Name")
-        binding.textViewProfileEmail.text = getString(R.string.profile_greeting, userName)
-        binding.imageButtonProfileLogout.setOnClickListener {
-            val intentSignIn = Intent(this, SignInActivity::class.java)
-            startActivity(intentSignIn)
+        binding.bottomNavigationViewProfile.setOnItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.menuTasks -> {
+                    supportFragmentManager
+                        .beginTransaction()
+                        .replace(R.id.fragmentContainerViewProfile, TasksFragment())
+                        .commit()
+                }
+                R.id.menuProfile -> {
+                    supportFragmentManager
+                        .beginTransaction()
+                        .replace(R.id.fragmentContainerViewProfile, ProfileFragment())
+                        .commit()
+                }
+            }
+            true
         }
     }
 }
