@@ -1,4 +1,4 @@
-package com.example.design_log
+package com.example.design_log.presentation.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,8 +11,8 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-
         binding.getStartedButton.setOnClickListener {
+
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }

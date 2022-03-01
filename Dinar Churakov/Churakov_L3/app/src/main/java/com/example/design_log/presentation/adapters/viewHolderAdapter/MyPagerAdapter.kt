@@ -1,8 +1,8 @@
-package com.example.design_log.viewHolderAdapter
+package com.example.design_log.presentation.adapters.viewHolderAdapter
 
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.design_log.fragments.ViewPagerFragment
+import com.example.design_log.presentation.ui.fragments.ViewPagerFragment
 
 class MyPagerAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
 

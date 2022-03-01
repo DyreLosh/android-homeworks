@@ -7,12 +7,27 @@
 
     <fragment
         android:id="@+id/menuProfile"
-        android:name="com.example.design_log.fragments.ProfileFragment"
+        android:name="com.example.design_log.presentation.ui.fragments.ProfileFragment"
         android:label="@string/navProfileLabel"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/menuHome"
-        android:name="com.example.design_log.fragments.TasksFragment"
+        android:name="com.example.design_log.presentation.ui.fragments.TasksFragment"
         android:label="@string/navTasksLabel"
-        tools:layout="@layout/fragment_tasks" />
+        tools:layout="@layout/fragment_tasks" >
+        <action
+            android:id="@+id/action_menuHome_to_newTaskFragment"
+            app:destination="@id/menuNewTask"
+            app:popUpTo="@id/menuHome"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuNewTask"
+        android:name="com.example.design_log.presentation.ui.fragments.NewTaskFragment"
+        android:label=""
+        tools:layout="@layout/fragment_new_task" >
+        <action
+            android:id="@+id/action_newTaskFragment_to_menuHome"
+            app:destination="@id/menuHome" />
+    </fragment>
 </navigation>

@@ -1,14 +1,19 @@
-package com.example.design_log
+package com.example.design_log.presentation.ui.activity
 
+import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.TextView
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
 import androidx.navigation.ui.setupWithNavController
+import com.example.design_log.R
+import com.example.design_log.common.preference.PreferenceManager
 import com.example.design_log.databinding.ActivityProfileBinding
 
 class ProfileActivity : AppCompatActivity() {
@@ -47,9 +52,13 @@ class ProfileActivity : AppCompatActivity() {
         return super.onCreateOptionsMenu(menu)
     }
 
+    @RequiresApi(Build.VERSION_CODES.N)
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.exitMenu -> {
+                val preferenceManager = PreferenceManager(this)
+                preferenceManager.deleteLoginPreference()
+                startActivity(Intent(this, LoginActivity::class.java))
                 finish()
             }
         }

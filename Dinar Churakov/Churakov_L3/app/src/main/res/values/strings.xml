@@ -12,6 +12,7 @@
     <string name="error_email_true">Введите правильную почту</string>
     <string name="error_confirm">Пароли не совпадают</string>
     <string name="error_username_more4">Введи больше 4 символов</string>
+    <string name="error_text_more_50">Введите меньше 50 слов!</string>
     <!-- Button -->
     <string name="sign_in_button">Sign In</string>
     <string name="register_button">Register</string>
@@ -55,4 +56,8 @@
     <string name="navProfileLabel">Profile</string>
     <string name="navTasksLabel">Tasks</string>
     <string name="header_email_text">%s</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_task">Add a new task</string>
+    <string name="add_task_button">Add task</string>
+    <string name="welcome_splash">Hello!</string>
 </resources>

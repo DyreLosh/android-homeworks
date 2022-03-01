@@ -1,4 +1,4 @@
-package com.example.design_log.validation
+package com.example.design_log.common.validation
 
 import android.content.Context
 import android.widget.EditText
