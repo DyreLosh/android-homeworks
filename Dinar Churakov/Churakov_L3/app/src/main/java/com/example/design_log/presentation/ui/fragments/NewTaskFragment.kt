@@ -45,7 +45,8 @@ class NewTaskFragment : Fragment() {
                                     "Задача успешно создана",
                                     Toast.LENGTH_SHORT
                                 ).show()
-                                findNavController().navigate(R.id.action_newTaskFragment_to_menuHome)
+                                findNavController()
+                                    .navigate(R.id.action_newTaskFragment_to_menuHome)
                             }
                         }
 

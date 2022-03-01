@@ -114,7 +114,7 @@ class TasksFragment : Fragment() {
                     override fun onResponse(call: Call<Unit>, response: Response<Unit>) {
 
                         if (response.code() == 200) {
-                            //возникли проблемы с анимацией удаления, а так удаляет
+                            // возникли проблемы с анимацией удаления, а так удаляет
                             Toast.makeText(
                                 activity,
                                 "Успешно удалено",
