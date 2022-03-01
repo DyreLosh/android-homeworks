@@ -9,13 +9,12 @@
     tools:context=".HomeActivity">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/profileHomeFragment"
+        android:id="@+id/container"
         android:name="com.example.myapplication.ProfileHomeFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationViewHome"
         app:layout_constraintTop_toTopOf="parent"/>
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationViewHome"
         android:layout_width="match_parent"

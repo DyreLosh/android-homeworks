@@ -28,4 +28,7 @@
     <string name="password_error">Enter the correct password</string>
     <string name="fragment_home_menu_profile">Profile</string>
     <string name="fragment_home_menu_tasks_list">Tasks List</string>
+    <string name="pager_work">Work</string>
+    <string name="pager_study">Study</string>
+    <string name="pager_entertainment">Entertainment</string>
 </resources>

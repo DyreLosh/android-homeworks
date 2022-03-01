@@ -10,10 +10,6 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val userName = intent.extras?.getString("Name")
-        val fragment = supportFragmentManager.findFragmentById(binding.homeFragmentContainerView.id)
-            as ProfileFragment
-        fragment.email = userName
         binding.homeBottomNavigationView.setOnItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.menuFragmentProfile -> {

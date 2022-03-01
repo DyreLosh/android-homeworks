@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import com.example.a1proect.databinding.FragmentProfileBinding
 
 class ProfileFragment : Fragment() {
-    var email: String? = null
     lateinit var binding: FragmentProfileBinding
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -16,7 +15,8 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentProfileBinding.inflate(inflater, container, false)
-        binding.profTextWelcome.text = getString(R.string.home_greeting, email)
+        val name = activity?.intent?.extras?.getString("Name")
+        binding.profileCollapsing.title = getString(R.string.home_greeting, name)
         binding.iconExit.setOnClickListener {
             activity?.finish()
         }

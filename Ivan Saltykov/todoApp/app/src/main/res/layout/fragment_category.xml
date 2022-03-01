@@ -17,15 +17,5 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="15dp"
         android:id="@+id/floatingActionButtonCategory"/>
-    android:layout_height="match_parent">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="40dp"
-        android:layout_gravity="center"
-        android:id="@+id/textViewCategory"/>
 
 </FrameLayout>

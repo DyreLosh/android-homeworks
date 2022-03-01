@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">za</string>
+    <string name="email_hint">Enter your email</string>
+    <string name="password_hint">Forgot Password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="don_t_have_an_account">Don’t have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="welcome_onboard">Welcome onboard!</string>
+    <string name="we_help_you_meet_up_you_tasks_on_time">We help you meet up you tasks on time.</string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="enter_password">Enter password</string>
+    <string name="register">REGISTER</string>
+    <string name="let_s_get_things_done_on_time">Let’s get things done on time</string>
+    <string name="lorem_ipsum_started">Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Tellus praesent purus tincidunt ut cursus vitae. Nisl, vitae nulla lectus tortor,
+        est a aliquam. Pretium netus</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="welcome_profile">Welcome</string>
+    <string name="error_empty">The field must not be empty</string>
+    <string name="error_email_length">Email must contain at least 6 characters!</string>
+    <string name="error_email_sign">Email must contain "@"</string>
+    <string name="profile_greeting">Hello %1$s!</string>
+    <string name="error_name_length">Name must contain at least 4 characters!</string>
+    <string name="error_password_length">Password must contain at least 8 characters!</string>
+    <string name="error_password_different">Passwords must match!</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_in_regisration">Sign In</string>
+    <string name="enter_your_email_main">Enter your email</string>
+    <string name="confirm_password_main">Confirm password</string>
+</resources>

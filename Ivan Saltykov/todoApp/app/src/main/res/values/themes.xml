@@ -16,6 +16,7 @@
     <style name="titleProfile">
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">end</item>
     </style>
     <style name="tabLayoutText">
         <item name="android:textSize">15dp</item>

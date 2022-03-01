@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="yellowY">#FFD615</color>
     <color name="greyY">#F5F5F5</color>
+    <color name="greyItemTaskTime">#9F9F9F</color>
 </resources>

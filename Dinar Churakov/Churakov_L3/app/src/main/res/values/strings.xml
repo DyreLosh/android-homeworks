@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Tasks</string>
+    <string name="app_name">Design</string>
     <!-- Hint -->
     <string name="confirm_password_hint">Confirm password</string>
     <string name="password_hint">Enter password</string>

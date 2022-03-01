@@ -22,9 +22,6 @@ class ProfileFragment : Fragment() {
         binding = FragmentProfileBinding.inflate(inflater, container, false)
         val name = activity?.intent?.extras?.getString("Name")
         binding.collapsingToolbarProfile.title = getString(R.string.profile_name, name)
-        binding.imageViewProfileOut.setOnClickListener {
-            activity?.finish()
-        }
         binding.imageViewAvatar.setOnClickListener {
             openGalleryForImage()
         }
@@ -40,7 +37,7 @@ class ProfileFragment : Fragment() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (resultCode == Activity.RESULT_OK && requestCode == REQUEST_CODE) {
-            binding.imageViewAvatar.setImageURI(data?.data) // handle chosen image
+            binding.imageViewAvatar.setImageURI(data?.data)
         }
     }
 }

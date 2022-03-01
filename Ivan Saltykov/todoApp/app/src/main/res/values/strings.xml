@@ -56,6 +56,9 @@
     <string name="category_work">Work</string>
     <string name="category_study">Study</string>
     <string name="category_entertainments">Еntertainment</string>
-
     <string name="name_fragment_tasks">Tasks List</string>
+
+    <string name="exit">Exit</string>
+    <string name="nav_open_drawer">Open navigation drawer</string>
+    <string name="nav_close_drawer">Close navigation drawer</string>
 </resources>

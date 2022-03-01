@@ -18,6 +18,5 @@
             android:title="New Task"
             android:icon="@drawable/ic_plus"/>
 
-
     </group>
 </menu>

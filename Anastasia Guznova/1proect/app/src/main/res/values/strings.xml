@@ -28,4 +28,8 @@
     <string name="error_name">Проверьте свое имя</string>
     <string name="profile_fragment_title">Profile</string>
     <string name="task_fragment_title">Task List</string>
+    <string name="fragment_task_pager_work">Work</string>
+    <string name="fragment_task_pager_entertainment">Entertainment</string>
+    <string name="fragment_task_pager_study">Study</string>
+
 </resources>

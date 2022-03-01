@@ -18,7 +18,7 @@
             app:layout_scrollFlags="scroll|exitUntilCollapsed"
             app:contentScrim="@color/white"
             app:expandedTitleTextAppearance="@style/titleProfile"
-            app:expandedTitleGravity="center_horizontal|bottom">
+            app:expandedTitleGravity="center_horizontal|bottom" >
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -59,19 +59,13 @@
                     android:id="@+id/linearLayoutName">
 
                     <ImageView
-                        android:id="@+id/imageViewProfileOut"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_exit"
-                        android:layout_gravity="top|end"
-                        android:layout_margin="40dp"/>
-
-                    <ImageView
                         android:id="@+id/imageViewAvatar"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:src="@drawable/img_profile_avatar"
                         android:layout_gravity="center"
+                        android:layout_marginBottom="60dp"
+                        android:layout_marginTop="60dp"/>
                         android:layout_marginBottom="60dp"/>
 
                 </LinearLayout>
@@ -83,7 +77,6 @@
                 android:layout_height="?actionBarSize"
                 android:background="@android:color/transparent"
                 app:layout_collapseMode="pin" />
-
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 
     </com.google.android.material.appbar.AppBarLayout>

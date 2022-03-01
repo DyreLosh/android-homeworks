@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/menuFragmentprofile"
-        android:title="@string/profile_profile"
-        android:icon="@drawable/ic_profile"/>
-    <item
-        android:id="@+id/menuFragmenttasks"
-        android:title="@string/profile_tasks"
-        android:icon="@drawable/ic_tasks"/>
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:checked="true"
+            android:id="@+id/menuFragmentprofile"
+            android:title="@string/profile_profile"
+            android:icon="@drawable/ic_profile" />
+        <item
+            android:id="@+id/menuFragmenttasks"
+            android:title="@string/profile_tasks"
+            android:icon="@drawable/ic_tasks" />
+    </group>
 </menu>

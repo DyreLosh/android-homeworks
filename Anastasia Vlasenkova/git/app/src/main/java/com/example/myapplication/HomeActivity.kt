@@ -10,22 +10,18 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        val received = intent.extras?.getString("Email")
-        val fragment = supportFragmentManager.findFragmentById(binding.profileHomeFragment.id) as
-            ProfileHomeFragment
-        fragment.email = received
         binding.bottomNavigationViewHome.setOnItemSelectedListener { menu ->
             when (menu.itemId) {
                 R.id.menuFragmentHomeProfile -> {
                     supportFragmentManager
                         .beginTransaction()
-                        .replace(R.id.profileHomeFragment, ProfileHomeFragment())
+                        .replace(R.id.container, ProfileHomeFragment())
                         .commit()
                 }
                 R.id.menuFragmentHomeTasksList -> {
                     supportFragmentManager
                         .beginTransaction()
-                        .replace(R.id.profileHomeFragment, TasksListHomeFragment())
+                        .replace(R.id.container, TasksListHomeFragment())
                         .commit()
                 }
             }

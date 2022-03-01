@@ -9,22 +9,23 @@
         <entry key="..\:/1proect/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/1proect/app/src/main/res/layout/activity_registration.xml" value="0.264" />
         <entry key="..\:/1proect/app/src/main/res/layout/activity_slash.xml" value="0.264" />
-        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/activity_home.xml" value="0.264" />
-        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/activity_registration.xml" value="0.4" />
-        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/activity_slash.xml" value="0.25416666666666665" />
-        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/activity_splash.xml" value="0.25416666666666665" />
-        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/fragment_blank.xml" value="0.25416666666666665" />
-        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/fragment_profile.xml" value="0.25416666666666665" />
-        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/fragment_profile1.xml" value="0.25416666666666665" />
-        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/fragment_task_list.xml" value="0.264" />
-        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/menu/home_bottom_navigation.xml" value="0.25416666666666665" />
-        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/menu/home_button_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
         <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/activity_registration.xml" value="0.264" />
         <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/activity_slash.xml" value="0.25416666666666665" />
         <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/activity_splash.xml" value="0.25416666666666665" />
+        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/fragment_blank.xml" value="0.25416666666666665" />
+        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/fragment_entertainment.xml" value="0.25416666666666665" />
+        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/fragment_pager.xml" value="0.25416666666666665" />
+        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/fragment_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/fragment_profile1.xml" value="0.25416666666666665" />
+        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/fragment_study.xml" value="0.25416666666666665" />
+        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/fragment_task_list.xml" value="0.264" />
+        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/fragment_work.xml" value="0.25416666666666665" />
+        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/item_task.xml" value="0.264" />
+        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/layout/recycler_view_work.xml" value="0.25416666666666665" />
+        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/menu/home_bottom_navigation.xml" value="0.25416666666666665" />
+        <entry key="..\:/android-homeworks/Anastasia Guznova/1proect/app/src/main/res/menu/home_button_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
