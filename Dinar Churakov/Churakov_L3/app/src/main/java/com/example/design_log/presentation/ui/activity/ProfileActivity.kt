@@ -1,12 +1,10 @@
 package com.example.design_log.presentation.ui.activity
 
 import android.content.Intent
-import android.os.Build
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.TextView
-import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
@@ -43,8 +41,8 @@ class ProfileActivity : AppCompatActivity() {
 
         val headerEmailText: TextView = binding.profileMenu.getHeaderView(0)
             .findViewById(R.id.headerEmailText)
-        val name = intent.getStringExtra("Name")
-        headerEmailText.text = getString(R.string.header_email_text, name)
+        val preferenceManager = PreferenceManager(this)
+        headerEmailText.text = preferenceManager.readPersonNamePreference()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -52,12 +50,12 @@ class ProfileActivity : AppCompatActivity() {
         return super.onCreateOptionsMenu(menu)
     }
 
-    @RequiresApi(Build.VERSION_CODES.N)
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.exitMenu -> {
                 val preferenceManager = PreferenceManager(this)
                 preferenceManager.deleteLoginPreference()
+                preferenceManager.deletePersonNamePreference()
                 startActivity(Intent(this, LoginActivity::class.java))
                 finish()
             }

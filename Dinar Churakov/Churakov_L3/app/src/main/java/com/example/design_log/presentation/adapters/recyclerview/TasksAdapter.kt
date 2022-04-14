@@ -1,5 +1,6 @@
 package com.example.design_log.presentation.adapters.recyclerview
 
+import android.annotation.SuppressLint
 import android.os.Build
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -29,13 +30,15 @@ class TasksAdapter : RecyclerView.Adapter<TaskViewHolder>() {
 
     override fun getItemCount() = items.size
 
+    @SuppressLint("NotifyDataSetChanged")
     fun submitList(tasks: List<TasksResponse>) {
         items.clear()
         items.addAll(tasks)
         notifyDataSetChanged()
     }
 
-    fun removeItem(position: Int) {
+    fun removeItem(taskId: Int) {
+        val position = items.indexOfFirst { it.id == taskId }
         items.removeAt(position)
         notifyItemRemoved(position)
     }

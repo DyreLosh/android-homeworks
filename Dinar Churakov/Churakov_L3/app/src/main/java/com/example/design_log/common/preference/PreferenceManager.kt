@@ -1,14 +1,14 @@
 package com.example.design_log.common.preference
 
 import android.content.Context
-import android.os.Build
-import androidx.annotation.RequiresApi
 
 class PreferenceManager(private val context: Context) {
 
     companion object {
         private const val PREFERENCE_TOKEN = "token"
         private const val KEY_TOKEN = "TOKEN"
+        private const val PREFERENCE_NAME = "name"
+        private const val NAME = "NAME"
     }
 
     fun writeLoginPreference(token: String) {
@@ -22,9 +22,24 @@ class PreferenceManager(private val context: Context) {
         val preference = context.getSharedPreferences(PREFERENCE_TOKEN, Context.MODE_PRIVATE)
         return preference.getString(KEY_TOKEN, null) ?: ""
     }
-    @RequiresApi(Build.VERSION_CODES.N)
-    fun deleteLoginPreference(): String {
-        val preference = context.deleteSharedPreferences(PREFERENCE_TOKEN)
-        return preference.toString()
+
+    fun deleteLoginPreference() {
+        val preference = context.getSharedPreferences(PREFERENCE_TOKEN, Context.MODE_PRIVATE)
+        preference.edit().clear().apply()
+    }
+
+    fun writePersonNamePreference(name: String) {
+        val preference = context.getSharedPreferences(PREFERENCE_NAME, Context.MODE_PRIVATE)
+        preference.edit().putString(NAME, name).apply()
+    }
+
+    fun readPersonNamePreference(): String {
+        val preference = context.getSharedPreferences(PREFERENCE_NAME, Context.MODE_PRIVATE)
+        return preference.getString(NAME, null) ?: ""
+    }
+
+    fun deletePersonNamePreference() {
+        val preference = context.getSharedPreferences(PREFERENCE_NAME, Context.MODE_PRIVATE)
+        preference.edit().clear().apply()
     }
 }

@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.design_log.R
 import com.example.design_log.common.preference.PreferenceManager
 import com.example.design_log.common.validation.Validator
 import com.example.design_log.data.https.ApiService
@@ -13,6 +14,7 @@ import com.example.design_log.databinding.ActivityLoginBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.net.HttpURLConnection
 
 class LoginActivity : AppCompatActivity() {
 
@@ -55,36 +57,37 @@ class LoginActivity : AppCompatActivity() {
                     override fun onResponse(call: Call<Token>, response: Response<Token>) {
 
                         when (response.code()) {
-                            200 -> {
+                            HttpURLConnection.HTTP_OK -> {
                                 val token = response.body()?.token
                                 preferenceManager.writeLoginPreference(token.toString())
+                                preferenceManager.writePersonNamePreference(email.text.toString())
                                 val intent = Intent(this@LoginActivity, ProfileActivity::class.java)
-                                intent.putExtra("Name", email.text.toString())
                                 startActivity(intent)
                                 finish()
                             }
 
-                            400 -> Toast.makeText(
+                            HttpURLConnection.HTTP_BAD_REQUEST -> Toast.makeText(
                                 this@LoginActivity,
-                                "Проблемы при входе в аккаунт",
+                                getString(R.string.login_bad_request),
                                 Toast.LENGTH_SHORT
                             ).show()
 
-                            401 -> Toast.makeText(
+                            HttpURLConnection.HTTP_UNAUTHORIZED -> Toast.makeText(
                                 this@LoginActivity,
-                                "Некорректные данные входа",
+                                getString(R.string.login_unauthorized),
                                 Toast.LENGTH_SHORT
                             ).show()
 
                             else -> Toast.makeText(
                                 this@LoginActivity,
-                                "Неизвестная ошибка",
+                                getString(R.string.request_error),
                                 Toast.LENGTH_SHORT
                             ).show()
                         }
                     }
 
                     override fun onFailure(call: Call<Token>, t: Throwable) {
+
                         Toast.makeText(this@LoginActivity, t.message, Toast.LENGTH_SHORT).show()
                     }
                 }

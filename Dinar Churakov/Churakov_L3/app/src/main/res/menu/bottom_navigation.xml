@@ -13,10 +13,5 @@
             android:title="@string/profile_menu_item"
             android:icon="@drawable/ic_user"/>
 
-        <item
-            android:id="@+id/menuNewTask"
-            android:title="New Task"
-            android:icon="@drawable/ic_plus"/>
-
     </group>
 </menu>

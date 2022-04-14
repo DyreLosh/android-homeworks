@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.design_log.R
+import com.example.design_log.common.preference.PreferenceManager
 import com.example.design_log.databinding.FragmentProfileBinding
 
 class ProfileFragment : Fragment() {
@@ -18,8 +18,8 @@ class ProfileFragment : Fragment() {
     ): View {
         binding = FragmentProfileBinding.inflate(inflater, container, false)
 
-        val name = activity?.intent?.extras?.getString("Name")
-        binding.welcomeProfileText.text = getString(R.string.welcome_profile, name)
+        val preferenceManager = PreferenceManager(requireContext())
+        binding.welcomeProfileText.text = preferenceManager.readPersonNamePreference()
         return binding.root
     }
 }

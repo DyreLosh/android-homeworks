@@ -12,7 +12,7 @@
     <string name="error_email_true">Введите правильную почту</string>
     <string name="error_confirm">Пароли не совпадают</string>
     <string name="error_username_more4">Введи больше 4 символов</string>
-    <string name="error_text_more_50">Введите меньше 50 слов!</string>
+    <string name="error_text_more_50">Введите меньше 50 символов!</string>
     <!-- Button -->
     <string name="sign_in_button">Sign In</string>
     <string name="register_button">Register</string>
@@ -60,4 +60,14 @@
     <string name="new_task">Add a new task</string>
     <string name="add_task_button">Add task</string>
     <string name="welcome_splash">Hello!</string>
+    <string name="login_bad_request">Проблемы при входе в аккаунт</string>
+    <string name="login_unauthorized">Некорректные данные входа</string>
+    <string name="request_error">Неизвестная ошибка</string>
+    <string name="new_task_successful_request">Задача успешно создана</string>
+    <string name="task_bad_request">Проблемы при получении задач</string>
+    <string name="missing_token_error">Отсутствуе токен</string>
+    <string name="task_ok_mark_request">Отмечено</string>
+    <string name="no_found_id_request">Задача с указанным id не найдена</string>
+    <string name="task_ok_delete_request">Успешно удалено</string>
+    <string name="navTaskLabel">New task</string>
 </resources>

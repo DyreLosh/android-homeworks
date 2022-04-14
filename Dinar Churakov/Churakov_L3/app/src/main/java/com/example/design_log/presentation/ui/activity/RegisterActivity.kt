@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.design_log.R
 import com.example.design_log.common.preference.PreferenceManager
 import com.example.design_log.common.validation.Validator
 import com.example.design_log.data.https.ApiService
@@ -64,15 +65,16 @@ class RegisterActivity : AppCompatActivity() {
 
                         if (response.isSuccessful) {
                             val token = response.body()?.token
+                            val name = binding.editTextName
                             preferenceManager.writeLoginPreference(token.toString())
+                            preferenceManager.writePersonNamePreference(name.text.toString())
                             val intent = Intent(this@RegisterActivity, ProfileActivity::class.java)
-                            intent.putExtra("Name", binding.editTextName.text.toString())
                             startActivity(intent)
                             finish()
                         } else {
                             Toast.makeText(
                                 this@RegisterActivity,
-                                "Некорректные данные входа",
+                                getString(R.string.login_bad_request),
                                 Toast.LENGTH_SHORT
                             ).show()
                         }
