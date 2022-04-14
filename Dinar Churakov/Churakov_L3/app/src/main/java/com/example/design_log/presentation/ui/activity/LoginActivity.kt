@@ -11,11 +11,10 @@ import com.example.design_log.data.https.ApiService
 import com.example.design_log.data.https.model.Token
 import com.example.design_log.data.https.model.UserLogin
 import com.example.design_log.databinding.ActivityLoginBinding
+import java.net.HttpURLConnection
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.net.HttpURLConnection
-
 
 class LoginActivity : AppCompatActivity() {
 
