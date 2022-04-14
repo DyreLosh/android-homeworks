@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
+import com.example.design_log.R
 import com.example.design_log.common.preference.PreferenceManager
 import com.example.design_log.data.https.ApiService
 import com.example.design_log.data.https.model.NewTask
@@ -16,7 +17,6 @@ import com.example.design_log.data.https.model.TasksResponse
 import com.example.design_log.databinding.FragmentTasksBinding
 import com.example.design_log.databinding.NewTaskDialogBinding
 import com.example.design_log.presentation.adapters.recyclerview.TasksAdapter
-import com.example.design_log.R
 import java.net.HttpURLConnection
 import retrofit2.Call
 import retrofit2.Callback

@@ -4,17 +4,17 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.design_log.R
 import com.example.design_log.common.preference.PreferenceManager
 import com.example.design_log.common.validation.Validator
 import com.example.design_log.data.https.ApiService
 import com.example.design_log.data.https.model.Token
 import com.example.design_log.data.https.model.UserLogin
 import com.example.design_log.databinding.ActivityLoginBinding
-import com.example.design_log.R
-import java.net.HttpURLConnection
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.net.HttpURLConnection
 
 
 class LoginActivity : AppCompatActivity() {
